@@ -1,0 +1,375 @@
+.header{
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+}
+
+
+#boxA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* booB */
+#boxB{
+    width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+}
+
+#navlinks{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color, 0.2s;
+}
+
+#navlinks:hover{
+    color: #FF4960;
+}
+
+
+#button{
+    width: 160px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF4960;
+    color: white;
+    border: transparent;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color, background-color, border, 0.2s;
+}
+
+#button:hover{
+    color: #FF4960;
+    background-color: transparent;
+    border: 1px solid #FF4960;
+}
+
+#droparrw{
+    transition: all 0.2s;
+    transform: rotate(-90deg);
+}
+.group:hover #droparrw{
+    transform: rotate(0deg);
+}
+
+.dropdown {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.2s;
+    position: absolute;
+    top: 100%; /* directly below the parent */
+    left: 0;
+    background-color: black;
+    z-index: 50;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* When parent is hovered */
+.group:hover .dropdown {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+/* cart */
+
+#cart{
+    display: flex;
+}
+#cart span{
+    font-size: 20px;
+    color: #FF4960;
+    transition: color, 0.2s;
+    cursor: pointer;
+}
+#cart span:hover{
+    color: white;
+}
+
+#count{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#cartWrap {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+#cartWrap.open {
+    opacity: 1;
+    visibility: visible;
+    background-color: #0000004d;
+    backdrop-filter: blur(2px);
+}
+
+#cartPop{
+    background-color: #202020;
+    width: 700px;
+    max-height: 60vh;
+}
+
+#tag{
+    background-color:#202020;
+    position: sticky;
+    top: 0;
+    border-bottom:1px solid #FF4960 ;
+}
+
+
+#cartPop hr{
+    width: 100%;
+    height: 1px;
+    background-color: #FF4960;
+}
+  
+
+@media screen and (max-width:768px) {
+    #cartPop{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+
+
+#cartevents{
+    width: 100%;
+    height: 40vh;
+    background-color: #FF4960;
+    border-width: 10px 2px 2px 2px;
+    border-style: solid;
+    border-color: #FF4960;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#cartPop #tag{
+    z-index: 2;
+}
+
+#cbox1,#cbox2{
+    display: flex;
+}
+
+#cbox1{
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#cbox2{
+    position: relative;
+    padding: 2em;
+    width: 55%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: start;
+    background-color: #202020;
+    flex-direction: column;
+}
+
+#cbox2 #tag1{
+    font-size: clamp(10px,4vw,20px);
+    font-weight: 600;
+    line-height: 1.4em;
+    margin: 5px 0 5px 0;
+    transition: color 0.2s;
+    z-index: 1;
+}
+#cbox2 #tag1:hover{
+    color: #FF4960;
+}
+
+#cbox2 p{
+    font-size:clamp(10px,70%,12.5px);
+    color: white;
+    line-height: 2em;
+}
+
+
+@media (max-width: 610px) {
+    #carteventsItm{
+        flex-direction: column;
+    }
+    #cbox1{
+        width: 100%;
+        height: 45%;
+    }
+    #cbox2{
+        padding: 0;
+        padding-left: 1.5em;
+        width: 100%;
+        height: 55%;
+    }
+}
+
+
+
+
+
+
+/* boxC */
+#boxC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* humicon */
+#hamicon{
+    display: none;
+    width: 2.2em;
+    cursor: pointer;
+}
+
+#hamicon img{
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@media screen and (max-width:990px){
+    #boxB{
+        display: none;
+    }
+
+    #boxC{
+        display: none;
+    }
+
+    #boxA{
+        width: 50%;
+        justify-content: start;
+    }
+
+    #cart{
+        width: 50%;
+        justify-content: end;
+    }
+
+    .header{
+        gap: clamp(1.5rem, 1vw, 1rem)
+    }
+
+    #hamicon{
+        display: flex;
+    }
+
+    #logo{
+        width: auto;
+    }
+}
+
+
+
+
+
+/* mobile & tab header */
+#minheader{
+    width: 21em;
+    height: 100vh;
+    background-color: #121212;
+    position: fixed;
+    left: -21em; 
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 1.5em 1em 1em 1.2em;
+    gap: 2em;
+    transition: left, 0.2s;
+}
+
+#minheader.show {
+    left: 0; 
+}
+
+#mininav{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color, 0.2s;
+    gap: 1.5em;
+}
+
+#mininav:hover{
+    color: #FF4960;
+}
+
+#button{
+    width: 160px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF4960;
+    color: white;
+    border: transparent;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color, background-color, border, 0.2s;
+}
+
+#button:hover{
+    color: #FF4960;
+    background-color: transparent;
+    border: 1px solid #FF4960;
+}
+
+#crossnav{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+#crossnav span{
+    font-size: 18px;
+    color: #FF4960;
+}
+
+@media screen and (max-width:600px) {
+    #minheader{
+        width: 100%;
+        left: -100%;
+    }
+}

@@ -1,0 +1,22 @@
+#hbutton{
+    /* width: 160px; */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF4960;
+    color: white;
+    border: transparent;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color, background-color, border, 0.2s;
+}
+
+#hbutton:hover{
+    color: #FF4960;
+    background-color: transparent;
+    border: 1px solid #FF4960;
+}
