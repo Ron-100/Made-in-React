@@ -1,9 +1,246 @@
 #contact-page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+#contact-fild{
+    padding-top: 2.8em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 85%;
+}
+
+#from_cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.contact-form {
+  width: 90%;
+  height: 80%;
+  background: #202020; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    background: #3b1d20; /* Dark reddish background */
+    border: 1px solid #ff3b57; /* Red border */
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+}
+.contact-form input{
+    width: 90%;
+    height: 12.8%;
+}
+.contact-form textarea {
+    height: 44%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    background: #ff3b57;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ff2a45; /* Darker red on hover */
+}
+
+
+#text{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 1em;
+    width: 50%;
+    height: 100%;
+}
+
+#text p{
+    font-size: 14px;
+    color: #FF4960;
+}
+
+#text h1{
+    font-size: clamp(30px,5vw,80px);
+    color: white;
+    font-weight: 600;
+}
+
+#text h6{
+    font-size: clamp(14px,5vw,18px);
+    color: #BABABA;
+}
+
+@media screen and (min-width:900px) and (max-width:1024px) {
+    #fbox{
+        width: 90%;
+        height: 85%;
+    }
+}
+@media screen and (max-width:900px){
+    #contact-fild{
+        padding: 8em 0;
+        height: auto;
+    }
+
+    #fbox{
+        flex-direction: column;
+        gap: 4em;
+        width: 90%;
+        height: 85%;
+    }
+
+    #text{
+        width: 100%;
+        padding: 0 2em;
+    }
+
+    #from_cover{
+        width: 100%;
+    }
+}
+
+#con_spartC {
+    margin: 4em auto;
+    max-width: 1152px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2em;
+}
+
+
+#con_spartC p{
+    margin: 10px 0;
+    color: #FF4960;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+#con_spartC h1{
+    font-size: clamp(10px,5vw,50px);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+h9{
+    font-size: clamp(10px,90%,24px);
+}
+h7{
+    font-size: 24px;
+}
+
+@media (max-width: 760px) {
+    #con_spartC {
+        margin: 5em auto;
+    }
+    #con_orbit{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #con_lft{
+        width: 80%;
+    }
+    #con_lft #con_itm1,#con_itm2{
+        align-items: start;
+        margin: 1.8em 0;
+    }
+
+    #con_lft h9{
+        text-align: start;
+    }
+
+    #con_mid{
+        width: 100%;
+        margin: 1em 0;
+    }
+    #con_rth{
+        width: 80%;
+    }
+}
+
+
+#join{
     background-image: url('https://images.pexels.com/photos/5310910/pexels-photo-5310910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.join_cont{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 1em;
+    width: 80%;
+    height: auto;
+}
+
+.join_cont p{
+    font-size: 14px;
+    color: #FF4960;   
+}
+.join_cont h1{
+    margin-bottom: 25px;
+    font-size: clamp(35px,5vw,42px);
+    font-weight: 600;
+    color: white;  
+    line-height: 55px;
+    letter-spacing: -1px;
+    word-spacing: 1px; 
 }

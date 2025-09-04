@@ -2,9 +2,9 @@ import React from 'react'
 import './button.css'
 import { NavLink } from 'react-router-dom'
 
-function Button({children,twich ='#',className}) {
+function Button({children,twich ='#',className, clickto}) {
     return (
-        <NavLink to={twich} >
+        <NavLink to={twich} onClick={clickto} >
             <div id='hbutton' className={className}>
                 {children}
             </div>
