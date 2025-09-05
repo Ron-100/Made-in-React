@@ -2,7 +2,7 @@ import React from 'react'
 import './button.css'
 import { NavLink } from 'react-router-dom'
 
-function Button({children,twich ='#',className, clickto}) {
+function Button({children,twich ='/contectus',className, clickto}) {
     return (
         <NavLink to={twich} onClick={clickto} >
             <div id='hbutton' className={className}>

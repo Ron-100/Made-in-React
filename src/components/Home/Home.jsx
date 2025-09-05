@@ -6,6 +6,8 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger'
 // import WavyPath from '../WavyPath' 
 import EventCard from '../Events/EventCard'
 import { useEffect, useState } from 'react'
+import Join from '../JoinNow/Join'
+import RunningClub from '../JoinNow/RunningClub'
 
 
 
@@ -282,10 +284,13 @@ function Home() {
 
                     <Button children={'VIEW MORW EVENTS'} className={'w-52'} twich={'/events'}/>
                 </div>
-
-
             </div>
+            
+            <Join/>
 
+            <div id='run' className='w-full flex justify-center items-center'>
+                <RunningClub />
+            </div>
         </>
         
     )

@@ -1,0 +1,85 @@
+.join-wrapper {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* fallback, adjust as needed */
+}
+
+.join-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ff3f57;
+    padding: 3rem 2rem;
+    max-width: 800px;
+    width: 100%;
+    color: #111;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+}
+
+.join-title {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.join-contact {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.join-contact p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 15px;
+    color: black;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.join-form .form-row:nth-child(1) {
+    gap: 2em;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: 1px solid #111;
+    font-size: 14px;
+    outline: none;
+    background-color: #F9677A;
+}
+
+
+
+.join-btn {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color, 0.3s;
+}
+
+.join-btn:hover {
+    color: black;
+    border: 1px solid black;
+    background-color: #ff3f57;
+}

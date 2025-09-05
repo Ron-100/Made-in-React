@@ -1,9 +1,9 @@
 import React from 'react'
 import './Contactus.css'
 import gsap from 'gsap'
-import Button from '../Button'
 import { useGSAP } from '@gsap/react'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import Join from '../JoinNow/Join'
 function ContectUs() {
 
 
@@ -98,19 +98,10 @@ function ContectUs() {
                             <h9 className=' text-gray-300'>We help set and achieve running goals, whether it's completing a 5K, running a marathon.</h9>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
 
-            <div id="join">
-                <div className="join_cont">
-                    <p>GET IN TOUCH</p>
-                    <h1>Take the first step towards <br /> your running goals today!</h1>
-                    <Button clickto={scrollUp} children={'JOIN NOW'} twich={'/contectus'} className={'w-36'} />
-                </div>
-            </div>
+            <Join url={scrollUp}/>
         </div>
     )
 }
