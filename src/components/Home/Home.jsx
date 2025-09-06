@@ -288,9 +288,8 @@ function Home() {
             
             <Join/>
 
-            <div id='run' className='w-full flex justify-center items-center'>
-                <RunningClub />
-            </div>
+            <RunningClub />
+            
         </>
         
     )

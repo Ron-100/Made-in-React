@@ -31,6 +31,11 @@ function RunningClub() {
             }
         })
 
+        tink.from('.join-card',{
+            opacity:0,
+            y:100
+        })
+
         tink.from('.join-title',{
             opacity:0,
             y:20,
@@ -71,40 +76,40 @@ function RunningClub() {
             x:100,
             duration:0.2
         },'input2')
-        
-        
     })
 
     return (
         <>
-        <section className="join-wrapper">
-            <div className="join-card">
-                <h1 className="join-title">Join to Running Club</h1>
+        <div id='run' className='w-full flex justify-center items-center'>
+            <section className="join-wrapper">
+                <div className="join-card">
+                    <h1 className="join-title">Join to Running Club</h1>
 
-                <div className="join-contact">
-                <p>
-                    <Mail size={18} /> hello@runningclub.com
-                </p>
-                <p>
-                    <Phone size={18} /> + (077) 364 18 952
-                </p>
-                </div>
+                    <div className="join-contact">
+                    <p>
+                        <Mail size={18} /> hello@runningclub.com
+                    </p>
+                    <p>
+                        <Phone size={18} /> + (077) 364 18 952
+                    </p>
+                    </div>
 
-                <form className="join-form" onSubmit={(e) => e.preventDefault()}>
-                <div className="form-row">
-                    <input type="text" placeholder="First name*" required />
-                    <input type="text" placeholder="Last name*" required />
+                    <form className="join-form" onSubmit={(e) => e.preventDefault()}>
+                    <div className="form-row">
+                        <input type="text" placeholder="First name*" required />
+                        <input type="text" placeholder="Last name*" required />
+                    </div>
+                    <div className="form-row">
+                        <input type="email" placeholder="Email*" required />
+                        <input type="tel" placeholder="Phone*" required />
+                    </div>
+                    <button type="submit" className="join-btn">
+                        JOIN NOW
+                    </button>
+                    </form>
                 </div>
-                <div className="form-row">
-                    <input type="email" placeholder="Email*" required />
-                    <input type="tel" placeholder="Phone*" required />
-                </div>
-                <button type="submit" className="join-btn">
-                    JOIN NOW
-                </button>
-                </form>
-            </div>
-        </section>
+            </section>
+        </div>
         </>
     )
 }
