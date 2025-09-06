@@ -1,5 +1,6 @@
 import React from 'react'
 import './Workouts.css'
+import RunningClub from '../JoinNow/RunningClub'
 function Workouts() {
     return (
         <>
@@ -14,6 +15,7 @@ function Workouts() {
             
             </div>
         </div>
+        <RunningClub/>
         </>
     )
 }

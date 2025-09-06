@@ -2,7 +2,7 @@
     margin: 0 auto;
     height: 75vh;
     background-blend-mode: overlay;
-    background-image: url('https://images.pexels.com/photos/176903/pexels-photo-176903.jpeg'),linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.4));
+    background-image: url('https://images.pexels.com/photos/176903/pexels-photo-176903.jpeg'),linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

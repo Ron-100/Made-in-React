@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Events.css'
+import RunningClub from '../JoinNow/RunningClub'
 import EventCard from '../Events/EventCard'
 import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
@@ -31,6 +32,7 @@ function Events() {
     })
 
     return (
+        <>
         <div id='event-page'>
             
             <div id="e1" className='flex justify-center items-center'>
@@ -49,8 +51,9 @@ function Events() {
                     ))}
                 </div>
             </div>
-
         </div>
+        <RunningClub/>
+        </>
     )
 }
 
