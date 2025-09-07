@@ -288,6 +288,35 @@ function Home() {
             
             <Join/>
 
+            <div id="news">
+                <div id="news_cover">
+                    <div id="top">
+                        <h1>Latest news</h1>
+                        <Button children={"VIEW MORE"} twich={'/news'} className={'w-36'}/>
+                    </div>
+                    <div id="btm">
+                        <div id="cag">
+                            <div id="black_sade"></div>
+                            <p>February 27, 2024</p>
+                            <h1>Must-Have Equipment for Every Runner</h1>
+                            <a href="#">Read More <p>&#10162;</p></a>
+                        </div>
+                        <div id="cag">
+                            <div id="black_sade"></div>
+                            <p>February 27, 2024</p>
+                            <h1>The Benefits of Trail Running</h1>
+                            <a href="#">Read More <p>&#10162;</p></a>
+                        </div>
+                        <div id="cag">
+                            <div id="black_sade"></div>
+                            <p>February 27, 2024</p>
+                            <h1>Ultimate Challenge: A Guide to Marathon Running </h1>
+                            <a href="#">Read More <p>&#10162;</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <RunningClub />
             
         </>

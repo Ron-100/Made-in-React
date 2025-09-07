@@ -322,3 +322,155 @@ h7{
 
 /* sone */
 
+
+
+
+
+/* News */
+
+#news{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1521px;
+    min-height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+}
+
+#news_cover{
+    width: 100%;
+    max-width: 1152px;
+    min-height: 100vh;
+    padding: 5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8em;
+}
+
+#news #top{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#news #top>h1{
+    font-size: clamp(30px,5vw,44px);
+    font-weight: 600;
+    color: white;
+}
+
+#news #btm{
+    width: 100%;
+    max-width: 1152px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+#btm #cag{
+    width: 31%;
+    height: 380px;
+    padding: 1.8em;
+    background-color: violet;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+#btm #cag:nth-child(1){
+    background-image: url('./img3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#btm #cag:nth-child(2){
+    background-image: url('./img2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#btm #cag:nth-child(3){
+    background-image: url('./img1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#black_sade{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 101%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.119);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transition: all, 0.2s;
+}
+#btm #cag:hover #black_sade{
+    top: 0;
+}
+
+#btm #cag p{
+    color: #FF4960;
+    z-index: 2;
+}
+
+#btm #cag h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    z-index: 2;
+}
+
+#btm #cag a{
+    text-decoration: none;
+    color: #FF4960;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 2;
+}
+#btm #cag a>p{
+    font-size: 20px;
+    transform: rotate(90deg);
+    transition: all, 0.4s;
+}
+#btm #cag a:hover p{
+    transform: rotate(0deg);
+}
+
+@media screen and (max-width:1000px) {
+    #news #btm{
+        flex-direction: column;
+    }
+    #btm #cag{
+        width: 100%;
+        height: 290px;
+    }
+}
+
+@media screen and (max-width:495px) {
+    #news #top{
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* News */

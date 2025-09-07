@@ -33,7 +33,8 @@ function RunningClub() {
 
         tink.from('.join-card',{
             opacity:0,
-            y:100
+            x:-180,
+            duration:1
         })
 
         tink.from('.join-title',{
@@ -80,10 +81,11 @@ function RunningClub() {
 
     return (
         <>
-        <div id='run' className='w-full flex justify-center items-center'>
+        <div id='run' className='w-full flex justify-center items-center relative'>
+            <div className='back-box w-2/5 h-full left-0 absolute'></div>
             <section className="join-wrapper">
                 <div className="join-card">
-                    <h1 className="join-title">Join to Running Club</h1>
+                    <h1 className="join-title capitalize">Join to Running Club</h1>
 
                     <div className="join-contact">
                     <p>
