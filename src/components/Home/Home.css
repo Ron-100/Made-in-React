@@ -380,7 +380,7 @@ h7{
     width: 31%;
     height: 380px;
     padding: 1.8em;
-    background-color: violet;
+    background-color: rgb(58, 58, 58);
     display: flex;
     justify-content: end;
     align-items: start;
