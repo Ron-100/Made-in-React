@@ -169,17 +169,16 @@ function Home() {
             scrollTrigger:{
                 trigger:'#top',
                 scroller:'body',
-                markers:true,
+                // markers:true,
                 start:'top 100%',
                 end:'top 0%'
             }
         });
 
-        newsline.from('#cag',{
+        newsline.from('#btm',{
             opacity:0,
             y:-200,
             duration:2,
-            stagger:0.2,
             ease: "elastic.out(1,0.3)"
         })
 
