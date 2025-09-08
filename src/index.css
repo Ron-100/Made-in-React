@@ -8,3 +8,7 @@
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+html,body{
+    background-color: #121212;
+}
