@@ -25,6 +25,8 @@ function Home() {
     },[])
 
     useGSAP(()=>{
+        gsap.registerPlugin(ScrollTrigger)
+
         gsap.from('#hContent',{
             y:40,
             opacity:0,
@@ -35,7 +37,6 @@ function Home() {
 
 
         // hwcase
-        gsap.registerPlugin(ScrollTrigger)
         
         let aSync = gsap.timeline({
             scrollTrigger:{
@@ -158,9 +159,39 @@ function Home() {
             }
         })
 
-
-
         // hwcase
+    })
+
+    useGSAP(()=>{
+        // news
+
+        let newsline = gsap.timeline({
+            scrollTrigger:{
+                trigger:'#top',
+                scroller:'body',
+                markers:true,
+                start:'top 100%',
+                end:'top 0%'
+            }
+        });
+
+        newsline.from('#cag',{
+            opacity:0,
+            y:-200,
+            duration:2,
+            stagger:0.2,
+            ease: "elastic.out(1,0.3)"
+        })
+
+        newsline.from('#top',{
+            opacity:0,
+            y:50,
+            duration:1,
+        },'-=1.2')
+
+
+        // news
+
     })
 
     return (
@@ -170,7 +201,7 @@ function Home() {
                     <div id='hContent' className='w-3/4 h-full flex flex-col justify-center gap-6'>
                         <h1 className=' text-white font-semibold'>Run with Passion and Purpose</h1>
                         <p className=''>Lace-up your shoes, set your goals, and let's run together towards a healthier, happier, and faster you.</p>
-                        <div id="hContact" className='my-5'>
+                        <div id="hContact" className='my-5 w-fit'>
                             <Button children={"LET'S RUN"} twich={'/contectus'} className={'w-40'}/>
                         </div>
                     </div>
