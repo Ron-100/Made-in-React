@@ -51,7 +51,6 @@ function Header() {
             blink: '/about',
             children: [
                 { name: 'Our Coaches', blink: '/about/coached' },
-                { name: 'How We Work', blink: '/about/how-we-work' },
                 { name: 'Pricing', blink: '/about/pricing' },
                 { name: 'Testimonials', blink: '/about/testimonials' },
                 { name: 'FAQ', blink: '/about/faq' }
@@ -99,7 +98,7 @@ function Header() {
 
     useGSAP(()=>{
         gsap.to('.header',{
-            backgroundColor: 'rgb(14, 14, 14)',
+            backgroundColor: '#121212',
             scrollTrigger:{
                 trigger:'.header',
                 scroller:'body',
@@ -138,12 +137,12 @@ function Header() {
                 <div id="boxB">
                     {navItems.map((item)=>(
                         <div key={item.name} className='relative group'>
-                            <NavLink id='navlinks' to={item.blink} className={({isActive})=>`${isActive ? 'text-pinkAccent' : 'text-white' }`}>{item.name} {item.children && <p id="droparrw" className=' inline-block '> &#10549; </p>}</NavLink>
+                            <NavLink id='navlinks' to={item.blink} className={({isActive})=>`${isActive ? 'text-pinkAccent' : 'text-white' }`}>{item.name} {item.children && <p id="darrw" className=' inline-block '> &#10549; </p>}</NavLink>
                             
                             {item.children && (
                                 <div className="dropdown hidden group-hover:flex flex-col gap-2 absolute top-full left-0 bg-black z-50 p-4 ">
                                     {item.children.map((child)=>(
-                                        <NavLink key={child.name} to={child.blink} className="text-white hover:text-lime-600 py-1 px-3 whitespace-nowrap hover:translate-x-1 transition-all" >{child.name}</NavLink>
+                                        <NavLink key={child.name} to={child.blink} className="text-white hover:text-pinkAccent py-1 px-3 whitespace-nowrap hover:translate-x-1 transition-all" >{child.name}</NavLink>
                                     ))}
                                 </div>
                             )}
@@ -189,7 +188,7 @@ function Header() {
                             {item.children && openDropdown === item.name && (
                                 <div className="pl-4 mt-1 flex flex-col gap-1">
                                     {item.children.map((child) => (
-                                        <NavLink key={child.name} to={child.blink} className="text-white hover:text-lime-600 text-sm px-2 py-1">
+                                        <NavLink key={child.name} to={child.blink} className="text-white hover:text-pinkAccent text-sm px-2 py-1">
                                             {child.name}
                                         </NavLink>
                                     ))}

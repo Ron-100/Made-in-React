@@ -5,7 +5,14 @@ import gsap from 'gsap'
 function News() {
 
     useGSAP(()=>{
-      gsap.from('#news-page h1,p',{
+      gsap.from('#news-page>h1',{
+        opacity:0,
+        y:-200,
+        delay:0.5,
+        direction:2,
+        ease: "circ.out",
+      })
+      gsap.from('#news-page>p',{
         opacity:0,
         y:-200,
         delay:0.5,

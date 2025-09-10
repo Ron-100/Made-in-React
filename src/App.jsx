@@ -10,7 +10,6 @@ import News from './components/News/News.jsx'
 import ContectUs from './components/ContectUs/ContactUs.jsx'
 import OurCoaches from './components/About/UnderAbout/OurCoaches.jsx'
 import FAQ from './components/About/UnderAbout/FAQ.jsx'
-import Hww from './components/About/UnderAbout/Hww.jsx'
 import Pricing from './components/About/UnderAbout/Pricing.jsx'
 import Testimo from './components/About/UnderAbout/Testimo.jsx'
 import EventDetail from './components/Events/EventDetail.jsx'
@@ -21,7 +20,6 @@ const router = createBrowserRouter(
       <Route path='' element={<Home/>}/>
       <Route path='about'> 
         <Route path='' element={<About/>}/>
-        <Route path='how-we-work' element={<Hww />}/>
         <Route path='faq' element={<FAQ />}/>
         <Route path='coached' element={<OurCoaches />}/>
         <Route path='pricing' element={<Pricing />}/>

@@ -1,0 +1,139 @@
+#coachHeader{
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://images.pexels.com/photos/5319371/pexels-photo-5319371.jpeg),linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#coachHeader h1{
+    font-weight: 600;
+    font-size: clamp(24px,5vw,68px);
+    color: white;
+}
+
+
+/* our coaches */
+
+
+/* coach-card1 */
+.coaches-page {
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+    min-height: 80vh;
+    padding: 60px 20px;
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+}
+
+.coaches-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.coaches-header h1 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.coaches-header p {
+  color: white;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.coaches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coach-card {
+  background-color: #ff3f57;
+  border-radius: 2px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  transition: all, 0.5s;
+}
+
+.coach-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all, 0.5s;
+}
+
+.coach-img>img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: all, 0.5s;
+}
+
+.coach-card h2 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+  border-radius: 8px 0px 8px 0px;
+  padding: 0 15px;
+  color: #ff3f57;
+  width: fit-content;
+  background-color: #202020;
+  transition: all, 0.5s;
+}
+
+.coach-card h3 {
+    font-size: 12px;
+    border-radius: 8px 0px 8px 0px;
+  padding: 0 15px;
+  width: fit-content;
+  color: white;
+  background-color: #202020;
+  margin-bottom: 10px;
+  transition: all, 0.5s;
+}
+
+.coach-card p {
+  font-size: 14px;
+  text-align: left;
+  color: rgb(230, 230, 230);
+  line-height: 1.5;
+  transition: all, 0.5s;
+}
+
+
+@media screen and (min-width:1020px) {
+    .coach-card{
+        position: relative;
+    }
+
+    .coach-card:hover .coach-img {
+        position: absolute;
+        bottom: -180px;
+        border-radius: 0px;
+        width: 400px;
+        height: 280px;
+        transition: all, 0.5s;
+        padding: 5px;
+        background-color: #ffffff;
+        overflow: visible;
+        z-index: 1;
+    }
+}
+

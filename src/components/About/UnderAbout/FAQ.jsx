@@ -1,8 +1,11 @@
 import React from 'react'
+import RunningClub from '../../JoinNow/RunningClub'
 
 function FAQ() {
     return (
-        <>FAQ</>
+        <>
+        <RunningClub/>
+        </>
     )
 }
 
