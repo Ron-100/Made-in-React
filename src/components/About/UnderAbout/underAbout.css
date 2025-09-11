@@ -122,6 +122,7 @@
 
   .coach-card:hover .coach-img {
     width: 100%;
+    animation-delay: 0.5s;
     border-radius: 0;
     z-index: 2;
   }

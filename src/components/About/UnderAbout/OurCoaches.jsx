@@ -10,7 +10,7 @@ function OurCoaches() {
         gsap.from('#coachHeader>h1',{
             opacity:0,
             scale:0,
-            delay:0.2,
+            delay:0.4,
             duration:0.5
         })
     })
