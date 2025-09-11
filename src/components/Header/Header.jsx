@@ -142,7 +142,7 @@ function Header() {
                             {item.children && (
                                 <div className="dropdown hidden group-hover:flex flex-col gap-2 absolute top-full left-0 bg-black z-50 p-4 ">
                                     {item.children.map((child)=>(
-                                        <NavLink key={child.name} to={child.blink} className="text-white hover:text-pinkAccent py-1 px-3 whitespace-nowrap hover:translate-x-1 transition-all" >{child.name}</NavLink>
+                                        <NavLink key={child.name} to={child.blink} className={({ isActive }) =>`${isActive ? "text-pinkAccent" : "text-white"} hover:text-pinkAccent py-1 px-3 whitespace-nowrap hover:translate-x-1 transition-all`} >{child.name}</NavLink>
                                     ))}
                                 </div>
                             )}

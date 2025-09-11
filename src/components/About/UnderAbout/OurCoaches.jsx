@@ -86,7 +86,7 @@ function OurCoaches() {
             {coaches.map((coach, index) => (
                 <div key={index} className="coach-card">
                 <div className="coach-img">
-                    <img src={coach.img} alt={coach.name} />
+                    <img src={coach.img} alt={coach.name} loading="lazy" />
                 </div>
                 <h2>{coach.name}</h2>
                 <h3>{coach.role}</h3>

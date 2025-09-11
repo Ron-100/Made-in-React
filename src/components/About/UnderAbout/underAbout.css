@@ -1,47 +1,45 @@
-#coachHeader{
-    width: 100%;
-    height: 60vh;
-    background-image: url(https://images.pexels.com/photos/5319371/pexels-photo-5319371.jpeg),linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#coachHeader {
+  width: 100%;
+  height: 60vh;
+  background-image: url(https://images.pexels.com/photos/5319371/pexels-photo-5319371.jpeg),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#coachHeader h1{
-    font-weight: 600;
-    font-size: clamp(24px,5vw,68px);
-    color: white;
+#coachHeader h1 {
+  font-weight: 600;
+  font-size: clamp(24px, 5vw, 68px);
+  color: white;
 }
-
 
 /* our coaches */
 
-
-/* coach-card1 */
 .coaches-page {
-    margin: 0 auto;
-    max-width: 1500px;
-    width: 100%;
-    min-height: 80vh;
-    padding: 60px 20px;
-    background-color: #121212;
-    font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+  min-height: 80vh;
+  padding: 60px 20px;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
 }
 
 .coaches-header {
-    text-align: center;
+  text-align: center;
   margin-bottom: 50px;
 }
 
 .coaches-header h1 {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 10px;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .coaches-header p {
@@ -52,7 +50,7 @@
 }
 
 .coaches-grid {
-    display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   max-width: 1200px;
@@ -60,7 +58,7 @@
 }
 
 .coach-card {
-    background-color: #ff3f57;
+  background-color: #ff3f57;
   border-radius: 2px;
   padding: 20px;
   text-align: center;
@@ -70,25 +68,25 @@
   transition: all, 0.5s;
 }
 
-.coach-img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: all, 0.5s;
+.coach-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all, 0.5s;
 }
 
-.coach-img>img {
-    width: 100%;
-    height: 100%;
-    object-position: center;
-    object-fit: cover;
-    margin-bottom: 15px;
-    transition: all, 0.5s;
+.coach-img > img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: all, 0.5s;
 }
 
 .coach-card h2 {
-    font-size: 20px;
+  font-size: 20px;
   margin: 10px 0 5px;
   border-radius: 8px 0px 8px 0px;
   padding: 0 15px;
@@ -99,8 +97,8 @@
 }
 
 .coach-card h3 {
-    font-size: 12px;
-    border-radius: 8px 0px 8px 0px;
+  font-size: 12px;
+  border-radius: 8px 0px 8px 0px;
   padding: 0 15px;
   width: fit-content;
   color: white;
@@ -110,73 +108,71 @@
 }
 
 .coach-card p {
-    font-size: 14px;
-    text-align: left;
+  font-size: 14px;
+  text-align: left;
   color: rgb(230, 230, 230);
   line-height: 1.5;
   transition: all, 0.5s;
 }
 
+@media screen and (min-width: 1020px) {
+  .coach-card {
+    position: relative;
+  }
 
-@media screen and (min-width:1020px) {
-    .coach-card{
-        position: relative;
-    }
+  .coach-card:hover .coach-img {
+    width: 100%;
+    border-radius: 0;
+    z-index: 2;
+  }
 
-    .coach-card:hover .coach-img {
-        position: absolute;
-        bottom: -180px;
-        border-radius: 0px;
-        width: 400px;
-        height: 280px;
-        transition: all, 0.5s;
-        padding: 5px;
-        background-color: #ffffff;
-        overflow: visible;
-        z-index: 1;
-    }
+  /* .coach-card:hover .coach-img {
+    position: absolute;
+    bottom: -180px;
+    border-radius: 0px;
+    width: 400px;
+    height: 280px;
+    transition: all, 0.5s;
+    padding: 5px;
+    background-color: #ffffff;
+    overflow: visible;
+    z-index: 1;
+  } */
 }
-
 
 /* our coaches */
 
-
-
-
-
 /* pricing */
 
-#priceHead{
-    width: 100%;
-    height: 65vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 15px;
+#priceHead {
+  width: 100%;
+  height: 65vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px;
 }
 
-#priceHead h1{
-    font-weight: 600;
-    font-size: clamp(24px,5vw,68px);
-    color: white;
+#priceHead h1 {
+  font-weight: 600;
+  font-size: clamp(24px, 5vw, 68px);
+  color: white;
 }
-#priceHead p{
-    font-size: clamp(5px,2vw,16px);
-    color: rgb(151, 151, 151);
+#priceHead p {
+  font-size: clamp(5px, 2vw, 16px);
+  color: rgb(151, 151, 151);
 }
-
-
 
 .pricing-page {
-    margin: 0 auto;
-    max-width: 1500px;
-    width: 100%;
-    min-height: 100vh;
-    padding: 60px 20px;
-    background-color: #121212;
-    font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
 }
 
 .pricing-header {
@@ -210,7 +206,7 @@
   border-radius: 4px;
   padding: 50px 20px;
   text-align: center;
-  border: 2px solid #FF4960;
+  border: 2px solid #ff4960;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -233,7 +229,7 @@
 
 .price {
   font-size: 28px;
-  color: #FF4960;
+  color: #ff4960;
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: capitalize;
@@ -252,7 +248,7 @@
 }
 
 .btn {
-  background-color: #FF4960;
+  background-color: #ff4960;
   color: #fff;
   border: none;
   padding: 10px 18px;
@@ -263,100 +259,91 @@
 }
 
 .btn:hover {
-    border: 1px solid #FF4960;
-    color: #FF4960;
-    background-color: transparent;
+  border: 1px solid #ff4960;
+  color: #ff4960;
+  background-color: transparent;
 }
-
-
-
-
-
 
 #prspartA {
-    flex-wrap: wrap;
-    margin: 64px auto;
-    padding-bottom: 4em;
+  flex-wrap: wrap;
+  margin: 64px auto;
+  padding-bottom: 4em;
 }
 
-#prspartA{
-    display: flex;
+#prspartA {
+  display: flex;
 }
 
 #prspartA #prstext {
-    width: 35%;
-    font-size: 18px;
-    color: #C1C1C1;
+  width: 35%;
+  font-size: 18px;
+  color: #c1c1c1;
 }
 
 #prcounts {
-    display: flex;
-    width: 65%;
-    gap: clamp(20px, 5vw, 50px);
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  width: 65%;
+  gap: clamp(20px, 5vw, 50px);
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #prcounts #prfcount h1 {
-    font-size: 60px;
-    font-weight: 600;
-    color: #FF4960;
+  font-size: 60px;
+  font-weight: 600;
+  color: #ff4960;
 }
 
 #prcounts #prfcount h4 {
-    color: #C1C1C1;
+  color: #c1c1c1;
 }
 
-
 @media (max-width: 1024px) {
-    #prspartA {
-        padding: 0 2em 0 2em;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    #prspartA #prstext {
-        width: 100%;
-        font-size: 16px;
-    }
-    
-    #prcounts {
-        width: 100%;
-        justify-content: center;
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-    
-    #prcounts #prfcount {
-        align-items: center !important;
-        text-align: center;
-    }
+  #prspartA {
+    padding: 0 2em 0 2em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    #prcounts #prfcount h1 {
-        font-size: 48px;
-    }
+  #prspartA #prstext {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #prcounts {
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  #prcounts #prfcount {
+    align-items: center !important;
+    text-align: center;
+  }
+
+  #prcounts #prfcount h1 {
+    font-size: 48px;
+  }
 }
 
 @media (max-width: 640px) {
-    #prcounts #prfcount h1 {
-        font-size: 36px;
-    }
-    
-    #prspartA #prstext {
-        font-size: 15px;
-    }
-}
+  #prcounts #prfcount h1 {
+    font-size: 36px;
+  }
 
+  #prspartA #prstext {
+    font-size: 15px;
+  }
+}
 
 /* pricing */
 
-
-
 /* testimonials */
 
-.testi{
+.testi {
   color: white;
   background-color: black;
   height: 50vh;
@@ -365,12 +352,10 @@
   align-items: center;
 }
 
-.testi>h1{
-  font-size: clamp(24px,5vw,60px);
+.testi > h1 {
+  font-size: clamp(24px, 5vw, 60px);
   font-weight: 600;
 }
-
-
 
 .testimonials-page {
   margin: 0 auto;
@@ -388,7 +373,7 @@
 }
 
 .testimonials-header h1 {
-  font-size: clamp(29px,5vw,36px);
+  font-size: clamp(29px, 5vw, 36px);
   color: white;
   margin-bottom: 10px;
 }
@@ -408,7 +393,7 @@
 
 .testimonial-card {
   background: #202020;
-  border: 1.8px solid #FF4960;
+  border: 1.8px solid #ff4960;
   padding: 25px 20px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -439,7 +424,7 @@
 .testimonial-card h3 {
   font-size: 18px;
   margin-bottom: 5px;
-  color: #FF4960;
+  color: #ff4960;
 }
 
 .testimonial-card span {
@@ -448,14 +433,11 @@
   font-weight: bold;
 }
 
-
 /* testimonials */
-
-
 
 /* FAQ */
 
-.faq{
+.faq {
   color: white;
   background-color: black;
   height: 60vh;
@@ -464,12 +446,11 @@
   align-items: center;
 }
 
-.faq>h1{
-  font-size: clamp(24px,5vw,60px);
+.faq > h1 {
+  font-size: clamp(24px, 5vw, 60px);
   font-weight: 600;
   text-align: center;
 }
-
 
 .faq-page {
   min-height: 100vh;
@@ -510,7 +491,7 @@
 }
 
 .faq-item.active {
-  border-left: 4px solid #FF4960;
+  border-left: 4px solid #ff4960;
 }
 
 .faq-question {
@@ -522,13 +503,13 @@
 .faq-question h3 {
   font-size: 18px;
   margin: 0;
-  color: #FF4960;
+  color: #ff4960;
 }
 
 .faq-question span {
   font-size: 22px;
   font-weight: bold;
-  color: #FF4960;
+  color: #ff4960;
 }
 
 .faq-answer {
