@@ -29,7 +29,7 @@
 /* sone */
 
 #hwcase{
-    background-color: #121212;
+    background-color: var(--vyFlow);
     padding: 1em 1em 1em 1em;
     overflow: hidden;
 }
@@ -61,7 +61,7 @@
 #counts #fcount h1 {
     font-size: 60px;
     font-weight: 600;
-    color: #FF4960;
+    color: var(--alFlow);
 }
 
 #counts #fcount h4 {
@@ -141,12 +141,12 @@
 
 #imge p:nth-child(1){
     font-size: 42px;
-    color: #FF4960;
+    color: var(--alFlow);
 }
 #imge p:nth-child(2){
     font-size: 42px;
     color: transparent;
-    -webkit-text-stroke: 1px #FF4960
+    -webkit-text-stroke: 1px var(--alFlow)
 }
 #imge p:nth-child(3){
     font-size: 42px;
@@ -172,7 +172,7 @@
 }
 
 #div2 p:nth-child(1){
-    color: #FF4960;
+    color: var(--alFlow);
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -188,7 +188,7 @@ hr{
     border: none;
     width: 8em;
     height: 5px;
-    background-color: #FF4960;
+    background-color: var(--alFlow);
 }
 
 #div2 h6{
@@ -244,7 +244,7 @@ hr{
 
 #spartC p{
     margin: 10px 0;
-    color: #FF4960;
+    color: var(--alFlow);
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -333,7 +333,7 @@ h7{
     width: 100%;
     max-width: 1521px;
     min-height: 100vh;
-    background-color: #121212;
+    background-color: var(--vyFlow);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -429,7 +429,7 @@ h7{
 }
 
 #btm #cag p{
-    color: #FF4960;
+    color: var(--alFlow);
     z-index: 2;
 }
 
@@ -442,7 +442,7 @@ h7{
 
 #btm #cag a{
     text-decoration: none;
-    color: #FF4960;
+    color: var(--alFlow);
     display: flex;
     justify-content: center;
     align-items: center;

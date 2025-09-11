@@ -21,7 +21,7 @@ function LatestNews() {
             opacity:0,
             y:-200,
             duration:2,
-            delay:0.4,
+            delay:0.2,
             ease: "elastic.out(1,0.3)"
         })
         

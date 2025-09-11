@@ -24,7 +24,7 @@
 
 .join_cont p{
     font-size: 14px;
-    color: #FF4960;   
+    color: var(--alFlow);   
 }
 .join_cont h1{
     margin-bottom: 25px;

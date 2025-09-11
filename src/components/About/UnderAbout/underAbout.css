@@ -27,7 +27,7 @@
   width: 100%;
   min-height: 80vh;
   padding: 60px 20px;
-  background-color: #121212;
+  background-color: var(--vyFlow);
   font-family: Arial, sans-serif;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .coach-card {
-  background-color: #ff3f57;
+  background-color: var(--alFlow);
   border-radius: 2px;
   padding: 20px;
   text-align: center;
@@ -74,6 +74,7 @@
   border-radius: 50%;
   overflow: hidden;
   transition: all, 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
 .coach-img > img {
@@ -90,7 +91,7 @@
   margin: 10px 0 5px;
   border-radius: 8px 0px 8px 0px;
   padding: 0 15px;
-  color: #ff3f57;
+  color: var(--alFlow);
   width: fit-content;
   background-color: #202020;
   transition: all, 0.5s;
@@ -172,7 +173,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 60px 20px;
-  background-color: #121212;
+  background-color: var(--vyFlow);
   font-family: Arial, sans-serif;
 }
 
@@ -207,7 +208,7 @@
   border-radius: 4px;
   padding: 50px 20px;
   text-align: center;
-  border: 2px solid #ff4960;
+  border: 2px solid var(--alFlow);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -230,7 +231,7 @@
 
 .price {
   font-size: 28px;
-  color: #ff4960;
+  color: var(--alFlow);
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: capitalize;
@@ -249,7 +250,7 @@
 }
 
 .btn {
-  background-color: #ff4960;
+  background-color: var(--alFlow);
   color: #fff;
   border: none;
   padding: 10px 18px;
@@ -260,8 +261,8 @@
 }
 
 .btn:hover {
-  border: 1px solid #ff4960;
-  color: #ff4960;
+  border: 1px solid var(--alFlow);
+  color: var(--alFlow);
   background-color: transparent;
 }
 
@@ -293,7 +294,7 @@
 #prcounts #prfcount h1 {
   font-size: 60px;
   font-weight: 600;
-  color: #ff4960;
+  color: var(--alFlow);
 }
 
 #prcounts #prfcount h4 {
@@ -364,7 +365,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 100px 20px;
-  background: #121212;
+  background: var(--vyFlow);
   font-family: Arial, sans-serif;
 }
 
@@ -394,7 +395,7 @@
 
 .testimonial-card {
   background: #202020;
-  border: 1.8px solid #ff4960;
+  border: 1.8px solid var(--alFlow);
   padding: 25px 20px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -425,7 +426,7 @@
 .testimonial-card h3 {
   font-size: 18px;
   margin-bottom: 5px;
-  color: #ff4960;
+  color: var(--alFlow);
 }
 
 .testimonial-card span {
@@ -456,7 +457,7 @@
 .faq-page {
   min-height: 100vh;
   padding: 60px 20px;
-  background: #121212;
+  background: var(--vyFlow);
   font-family: Arial, sans-serif;
 }
 
@@ -492,7 +493,7 @@
 }
 
 .faq-item.active {
-  border-left: 4px solid #ff4960;
+  border-left: 4px solid var(--alFlow);
 }
 
 .faq-question {
@@ -504,13 +505,13 @@
 .faq-question h3 {
   font-size: 18px;
   margin: 0;
-  color: #ff4960;
+  color: var(--alFlow);
 }
 
 .faq-question span {
   font-size: 22px;
   font-weight: bold;
-  color: #ff4960;
+  color: var(--alFlow);
 }
 
 .faq-answer {

@@ -35,7 +35,7 @@ function Footer() {
             <div id='footerscontent'>
                 <div id="box1">
                     <Link to='/'>
-                        <img src="https://cdn.prod.website-files.com/65c0febf494dff5e0b629052/66051ffc719449e657e9ef71_logo.svg" alt="" />
+                        <img src="logoo.png" alt="" />
                     </Link>
                     <p>Join us on a journey through scenic trail runs and learn about Running Club exciting trail running outings and tips for tackling the trails.</p>
                     <div id="social-icons">

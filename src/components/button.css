@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF4960;
+    background-color: var(--alFlow);
     color: white;
     border: transparent;
     border-radius: 2px;
@@ -16,7 +16,7 @@
 }
 
 #hbutton:hover{
-    color: #FF4960;
+    color: var(--alFlow);
     background-color: transparent;
-    border: 1px solid #FF4960;
+    border: 1px solid var(--alFlow);
 }

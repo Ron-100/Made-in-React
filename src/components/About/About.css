@@ -59,7 +59,7 @@
 #abcounts #abfcount h1 {
     font-size: 60px;
     font-weight: 600;
-    color: #FF4960;
+    color: var(--alFlow);
 }
 
 #abcounts #abfcount h4 {
@@ -129,7 +129,7 @@
 }
 
 .about-subtitle {
-  color: #FF4960;
+  color: var(--alFlow);
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -180,7 +180,7 @@
 }
 
 .vision{
-  background-color: #FF4960;
+  background-color: var(--alFlow);
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -190,7 +190,7 @@
 
 
 .mission{
-  background-color: #FF4960;
+  background-color: var(--alFlow);
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -199,7 +199,7 @@
 }
 
 .values{
-  background-color: #FF4960;
+  background-color: var(--alFlow);
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -207,7 +207,7 @@
   flex-direction: column;
 }
 .goal{
-  background-color: #FF4960;
+  background-color: var(--alFlow);
   padding: 15px;
   display: flex;
   justify-content: center;

@@ -1,7 +1,7 @@
 #contact-page{
     width: 100%;
     min-height: 100vh;
-    background-color: #121212;
+    background-color: var(--vyFlow);
     overflow-x: hidden;
 }
 
@@ -45,7 +45,7 @@
 .contact-form textarea {
     width: 90%;
     background: #3b1d20; /* Dark reddish background */
-    border: 1px solid #ff3b57; /* Red border */
+    border: 1px solid var(--alFlow); /* Red border */
     color: white;
     padding: 15px;
     font-size: 16px;
@@ -76,7 +76,7 @@
     align-items: center;
     width: 90%;
     height: 10%;
-    background: #ff3b57;
+    background: var(--alFlow);
     border: none;
     color: white;
     padding: 15px;
@@ -86,7 +86,8 @@
 }
 
 .contact-form button:hover {
-  background: #ff2a45; /* Darker red on hover */
+    border: 1px solid var(--alFlow);
+  background: transparent; 
 }
 
 
@@ -102,7 +103,7 @@
 
 #text p{
     font-size: 14px;
-    color: #FF4960;
+    color: var(--alFlow);
 }
 
 #text h1{
@@ -158,7 +159,7 @@
 
 #con_spartC p{
     margin: 10px 0;
-    color: #FF4960;
+    color: var(--alFlow);
     text-transform: uppercase;
     font-size: 15px;
 }

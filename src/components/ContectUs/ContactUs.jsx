@@ -82,7 +82,7 @@ function ContectUs() {
 
 
                     <div id="con_mid" className='w-1/3 h-full flex justify-center items-center px-2'>
-                        <div id="gol" className='w-11/12 h-5/6 rounded-full bg-red-400 bg-opacity-45 relative overflow-hidden flex justify-center items-center p-2'>
+                        <div id="gol" className='w-11/12 h-5/6 rounded-full bg-orange-300 bg-opacity-75 relative overflow-hidden flex justify-center items-center p-2'>
                             <img src="https://images.pexels.com/photos/5039659/pexels-photo-5039659.jpeg" alt="" className='w-full h-full rounded-full object-cover object-center'/>
                         </div>
                     </div>

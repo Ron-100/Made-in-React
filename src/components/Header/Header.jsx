@@ -98,7 +98,7 @@ function Header() {
 
     useGSAP(()=>{
         gsap.to('.header',{
-            backgroundColor: '#121212',
+            backgroundColor: '#2F2F2F',
             scrollTrigger:{
                 trigger:'.header',
                 scroller:'body',
@@ -130,19 +130,19 @@ function Header() {
             <header className={`header relative z-50`}>
                 <div id="boxA">
                     <Link to='/' id='logo'>
-                        <img src="https://cdn.prod.website-files.com/65c0febf494dff5e0b629052/66051ffc719449e657e9ef71_logo.svg" alt="" />
+                        <img src="logoo.png" alt="" />
                     </Link>
                 </div>
                 
                 <div id="boxB">
                     {navItems.map((item)=>(
                         <div key={item.name} className='relative group'>
-                            <NavLink id='navlinks' to={item.blink} className={({isActive})=>`${isActive ? 'text-pinkAccent' : 'text-white' }`}>{item.name} {item.children && <p id="darrw" className=' inline-block '> &#10549; </p>}</NavLink>
+                            <NavLink id='navlinks' to={item.blink} className={({isActive})=>`${isActive ? 'text-lionDox' : 'text-white' }`}>{item.name} {item.children && <p id="darrw" className=' inline-block '> &#10549; </p>}</NavLink>
                             
                             {item.children && (
                                 <div className="dropdown hidden group-hover:flex flex-col gap-2 absolute top-full left-0 bg-black z-50 p-4 ">
                                     {item.children.map((child)=>(
-                                        <NavLink key={child.name} to={child.blink} className={({ isActive }) =>`${isActive ? "text-pinkAccent" : "text-white"} hover:text-pinkAccent py-1 px-3 whitespace-nowrap hover:translate-x-1 transition-all`} >{child.name}</NavLink>
+                                        <NavLink key={child.name} to={child.blink} className={({ isActive }) =>`${isActive ? "text-lionDox" : "text-white"} hover:text-lionDox py-1 px-3 whitespace-nowrap hover:translate-x-1 transition-all`} >{child.name}</NavLink>
                                     ))}
                                 </div>
                             )}

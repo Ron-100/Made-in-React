@@ -33,7 +33,7 @@
 /* blog */
 
 .blogs{
-    background-color: #121212;
+    background-color: var(--vyFlow);
 }
 
 .blog-container {
@@ -46,7 +46,7 @@
 }
 
 .blog-card {
-    background-color: #202020;
+    background-color: #222222;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -74,7 +74,7 @@
 
 .blog-category {
     display: inline-block;
-    background-color: #F3475C;
+    background-color: var(--alFlow);
     color: white;
     width: fit-content;
     font-weight: 600;
@@ -100,7 +100,7 @@
 .blog-link {
     margin-top: 12px;
     font-size: 14px;
-    color: #F3475C;
+    color: var(--alFlow);
     font-weight: bold;
     text-decoration: none;
     transition: color, 0.5s;

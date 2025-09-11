@@ -2,7 +2,7 @@
     width: 100%;
     height:400px;
     padding: 5em 0em 2.5em 0em;
-    background-color: #000000;
+    background-color: var(--vyFlow);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +27,10 @@
     align-items: start;
     flex-direction: column;
     gap: 25px;
+}
+
+#box1 img{
+    width: 200px;
 }
 
 #box1 p{
@@ -78,7 +82,7 @@
 }
 
 #flinks:hover{
-    color: #FF4960;
+    color: var(--alFlow);
 }
 
 /* box3 */
@@ -146,11 +150,11 @@ input::placeholder{
     width: 40%;
     height: 40px;
     font-size: 25px;
-    background-color:#FF4960;
+    background-color:var(--alFlow);
     transition: background-color, 0.2s ;
 }
 #eSubbtn:hover{
-    background-color:#ae3a49;
+    background-color: var(--alFlow);
 }
 
 #infos{
@@ -158,7 +162,7 @@ input::placeholder{
 }
 
 #infos p{
-    color: #FF4960;
+    color: var(--alFlow);
     font-size: clamp(15px,90%,17px);
     transition: color, 0.2s;
     cursor: pointer;
@@ -208,7 +212,7 @@ section p{
 }
 
 section p span{
-    color:#FF4960;
+    color:var(--alFlow);
     cursor: pointer;
     transition: color, 0.2s;
 }

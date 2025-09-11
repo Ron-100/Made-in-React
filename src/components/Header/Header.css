@@ -19,7 +19,7 @@
 }
 
 #logo{
-    width: 200px;
+    width: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@
 }
 
 #navlinks:hover{
-    color: #FF4960;
+    color: var(--alFlow);
 }
 
 
@@ -53,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF4960;
+    background-color: var(--alFlow);
     color: white;
     border: transparent;
     border-radius: 2px;
@@ -65,9 +65,9 @@
 }
 
 #button:hover{
-    color: #FF4960;
+    color: var(--alFlow);
     background-color: transparent;
-    border: 1px solid #FF4960;
+    border: 1px solid var(--alFlow);
 }
 
 #darrw{
@@ -109,7 +109,7 @@
 }
 #cart span{
     font-size: 20px;
-    color: #FF4960;
+    color: var(--alFlow);
     transition: color, 0.2s;
     cursor: pointer;
 }
@@ -145,14 +145,14 @@
     background-color:#202020;
     position: sticky;
     top: 0;
-    border-bottom:1px solid #FF4960 ;
+    border-bottom:1px solid var(--alFlow) ;
 }
 
 
 #cartPop hr{
     width: 100%;
     height: 1px;
-    background-color: #FF4960;
+    background-color: var(--alFlow);
 }
   
 
@@ -169,10 +169,10 @@
 #cartevents{
     width: 100%;
     height: 40vh;
-    background-color: #FF4960;
+    background-color: var(--alFlow);
     border-width: 10px 2px 2px 2px;
     border-style: solid;
-    border-color: #FF4960;
+    border-color: var(--alFlow);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -213,7 +213,7 @@
     z-index: 1;
 }
 #cbox2 #tag1:hover{
-    color: #FF4960;
+    color: var(--alFlow);
 }
 
 #cbox2 p{
@@ -331,7 +331,7 @@
 }
 
 #mininav:hover{
-    color: #FF4960;
+    color: var(--alFlow);
 }
 
 #button{
@@ -340,7 +340,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF4960;
+    background-color: var(--alFlow);
     color: white;
     border: transparent;
     border-radius: 2px;
@@ -352,9 +352,9 @@
 }
 
 #button:hover{
-    color: #FF4960;
+    color: var(--alFlow);
     background-color: transparent;
-    border: 1px solid #FF4960;
+    border: 1px solid var(--alFlow);
 }
 
 #crossnav{
@@ -365,7 +365,7 @@
 
 #crossnav span{
     font-size: 18px;
-    color: #FF4960;
+    color: var(--alFlow);
 }
 
 @media screen and (max-width:600px) {

@@ -8,6 +8,10 @@ export default {
     extend: {
       colors:{
         pinkAccent: '#FF4960',
+        vyFlow: '#030D4E',
+        alFlow: '#F8A01C',
+        hireDox: '#1E3756',
+        lionDox: '#FE6F27'
       }
     },
   },
