@@ -9,7 +9,7 @@ function LatestNews() {
         // news
         let newsline = gsap.timeline({
             scrollTrigger:{
-                trigger:'#top',
+                trigger:'#news',
                 scroller:'body',
                 // markers:true,
                 start:'top 100%',
