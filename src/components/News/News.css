@@ -44,7 +44,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
-
+ 
 .blog-card {
     background-color: #222222;
     overflow: hidden;

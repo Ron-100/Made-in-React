@@ -64,6 +64,7 @@ function EventCard({id,image,tag,date,compos,time,location,ticketPrice}) {
                     
                 
                 </div>
+                
                 <div id="ebox3" className='relative' >
                     <p>Ticket</p>
                     <p>{ticketPrice}</p>

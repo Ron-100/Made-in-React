@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../Button'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import { useNavigate } from 'react-router-dom';
 
 function LatestNews() {
     
@@ -20,21 +21,37 @@ function LatestNews() {
         newsline.from('#btm',{
             opacity:0,
             y:-200,
-            duration:2,
+            duration:1,
             delay:0.2,
-            ease: "elastic.out(1,0.3)"
         })
         
         newsline.from('#top',{
             opacity:0,
             y:50,
             duration:1,
-        },'-=1.2')
+        },)
 
 
         // news
 
     })
+
+    let navigate = useNavigate();
+
+    const info = [
+        {
+            date:'February 27, 2024',
+            text:'Must-Have Equipment for Every Runner'
+        },
+        {
+            date:'February 27, 2024',
+            text:'The Benefits of Trail Running'
+        },
+        {
+            date:'February 27, 2024',
+            text:'Ultimate Challenge: A Guide to Marathon Running'
+        }
+    ]
 
     return (
         <div id="news">
@@ -42,26 +59,17 @@ function LatestNews() {
                 <div id="top">
                     <h1>Latest news</h1>
                     <Button children={"VIEW MORE"} twich={'/news'} className={'w-36'}/>
-                </div>
+                </div> 
+
                 <div id="btm">
-                    <div id="cag">
-                        <div id="black_sade"></div>
-                        <p>February 27, 2024</p>
-                        <h1>Must-Have Equipment for Every Runner</h1>
-                        <a href="#">Read More <p>&#10162;</p></a>
-                    </div>
-                    <div id="cag">
-                        <div id="black_sade"></div>
-                        <p>February 27, 2024</p>
-                        <h1>The Benefits of Trail Running</h1>
-                        <a href="#">Read More <p>&#10162;</p></a>
-                    </div>
-                    <div id="cag">
-                        <div id="black_sade"></div>
-                        <p>February 27, 2024</p>
-                        <h1>Ultimate Challenge: A Guide to Marathon Running </h1>
-                        <a href="#">Read More <p>&#10162;</p></a>
-                    </div>
+                    {info.map((inf, inx)=>(
+                        <div id="cag" key={inx}>
+                            <div id="black_sade"></div>
+                            <p>{inf.date}</p>
+                            <h1>{inf.text}</h1>
+                            <button onClick={()=> (navigate('/contectus'))} >Read More <p>&#10162;</p></button>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

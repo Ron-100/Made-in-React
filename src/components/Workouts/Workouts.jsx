@@ -10,7 +10,7 @@ function Workouts() {
 
     // optimized
     useGSAP(() => {
-        let tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 0.8 } });
+        let tl = gsap.timeline({ defaults: { duration: 0.8 } });
 
         tl.from("#work-page h1", {
             opacity: 0,
@@ -24,6 +24,24 @@ function Workouts() {
             opacity: 0,
             scale: 0.8,
         }, "-=0.3"); // overlap for smoothness
+    });
+
+    useGSAP(() => {
+        gsap.from('.program-card', {
+            opacity: 0,
+            yPercent: 20, 
+            duration: 0.8,
+            stagger: 0.15, 
+            ease: "power2.out",
+            scrollTrigger: {
+            trigger: '.workhead',
+            scroller: 'body',
+            start: 'top 80%',
+            end: 'top 20%',
+            toggleActions: 'play none none reverse',
+            // markers: true,
+            }
+        });
     });
 
     // not optimized
@@ -103,7 +121,7 @@ function Workouts() {
                         <div className="program-content">
                             <h2>{prog.title}</h2>
                             <p>{prog.description}</p>
-                            <button id='cfm' href="/contectus" onClick={() => navigate("/contectus")}>
+                            <button id='cfm' onClick={() => navigate("/contectus")}>
                                 <span id='syp'>Click</span>
                                 <span id='syp'>Contact For More</span>
                             </button>

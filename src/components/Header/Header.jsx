@@ -93,9 +93,9 @@ function Header() {
     
 
 
+    
     //Header Scroll BG change
     gsap.registerPlugin(ScrollTrigger)
-
     useGSAP(()=>{
         gsap.to('.header',{
             backgroundColor: '#2F2F2F',

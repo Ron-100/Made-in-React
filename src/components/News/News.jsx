@@ -1,9 +1,10 @@
 import React from "react";
 import "./News.css";
 import {useGSAP} from '@gsap/react'
+import {NavLink} from 'react-router-dom'
 import gsap from 'gsap'
 function News() {
-
+ 
     // optimized
     useGSAP(() => {
       let tl = gsap.timeline({
@@ -110,7 +111,7 @@ function News() {
                 <span className="blog-category">{post.category}</span>
                 <h2 className="blog-title">{post.title}</h2>
                 <p className="blog-description">{post.description}</p>
-                <a href="/contectus" className="blog-link">Read More</a>
+                <NavLink to ="/contectus"  className="blog-link">Read More</NavLink>
               </div>
             </div>
           ))}

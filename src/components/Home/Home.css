@@ -440,7 +440,7 @@ h7{
     z-index: 2;
 }
 
-#btm #cag a{
+#btm #cag button{
     text-decoration: none;
     color: var(--alFlow);
     display: flex;
@@ -449,12 +449,12 @@ h7{
     gap: 5px;
     z-index: 2;
 }
-#btm #cag a>p{
+#btm #cag button>p{
     font-size: 20px;
     transform: rotate(90deg);
     transition: all, 0.4s;
 }
-#btm #cag a:hover p{
+#btm #cag button:hover p{
     transform: rotate(0deg);
 }
 
