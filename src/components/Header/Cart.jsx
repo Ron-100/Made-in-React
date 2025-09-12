@@ -54,16 +54,16 @@ function Cart({ cartOpen, closeCart }) {
                                                 <p id='tag1' >{item.tag}</p>
                                             </NavLink>
                                             <div className='flex items-center gap-2'>
-                                                <IoCalendarClear className='text-pinkAccent' /><p>{item.date}</p>
+                                                <IoCalendarClear className='text-lionDox' /><p>{item.date}</p>
                                             </div>
                                             <div className='flex items-center gap-2'>
-                                                <FaUser className='text-pinkAccent' /><p>{item.compos}</p>
+                                                <FaUser className='text-lionDox' /><p>{item.compos}</p>
                                             </div>
                                             <div className='flex items-center gap-2'>
-                                                <FaClock className='text-pinkAccent' /><p>{item.time}</p>
+                                                <FaClock className='text-lionDox' /><p>{item.time}</p>
                                             </div>
                                             <div className='flex items-center gap-2'>
-                                                <GrLocationPin className='text-pinkAccent' /><p>{item.location}</p>
+                                                <GrLocationPin className='text-lionDox' /><p>{item.location}</p>
                                             </div>
 
                                             {/* Toggle add/remove */}
