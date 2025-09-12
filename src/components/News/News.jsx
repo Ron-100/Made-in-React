@@ -4,22 +4,41 @@ import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
 function News() {
 
-    useGSAP(()=>{
-      gsap.from('#news-page>h1',{
-        opacity:0,
-        y:-200,
-        delay:0.5,
-        direction:2,
-        ease: "circ.out",
+    // optimized
+    useGSAP(() => {
+      let tl = gsap.timeline({
+        defaults: { duration: 0.8, ease: "power3.out" }
+      });
+
+      tl.from("#news-page h1", {
+        delay:0.8,
+        opacity: 0,
+        y: 60
       })
-      gsap.from('#news-page>p',{
-        opacity:0,
-        y:-200,
-        delay:0.5,
-        direction:2,
-        ease: "circ.out",
-      })
-    })
+      .from("#news-page p", {
+        opacity: 0,
+        y: 40
+      }, "-=0.4"); // start slightly earlier for smooth flow
+    });
+
+
+    // unoptimized
+    // useGSAP(()=>{
+    //   gsap.from('#news-page>h1',{
+    //     opacity:0,
+    //     y:-200,
+    //     delay:0.5,
+    //     direction:2,
+    //     ease: "circ.out",
+    //   })
+    //   gsap.from('#news-page>p',{
+    //     opacity:0,
+    //     y:-200,
+    //     delay:0.5,
+    //     direction:2,
+    //     ease: "circ.out",
+    //   })
+    // })
 
     const articles = [
         {

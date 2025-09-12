@@ -4,19 +4,39 @@ import Button from '../Button'
 import RunningClub from '../JoinNow/RunningClub'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { useNavigate } from 'react-router-dom'
 function Workouts() {
 
 
-    useGSAP(()=>{
-        gsap.from('#work-page h1,#b',{
-            opacity:0,
-            y:80
+    // optimized
+    useGSAP(() => {
+        let tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 0.8 } });
+
+        tl.from("#work-page h1", {
+            opacity: 0,
+            y: 60,
         })
-        gsap.from('#work-page>p',{
-            opacity:0,
-            y:80
-        })
-    })
+        .from("#work-page > p", {
+            opacity: 0,
+            y: 40,
+        }, "-=0.4") // overlap a bit
+        .from("#b", {
+            opacity: 0,
+            scale: 0.8,
+        }, "-=0.3"); // overlap for smoothness
+    });
+
+    // not optimized
+    // useGSAP(()=>{
+    //     gsap.from('#work-page h1,#b',{
+    //         opacity:0,
+    //         y:80
+    //     })
+    //     gsap.from('#work-page>p',{
+    //         opacity:0,
+    //         y:80
+    //     })
+    // })
 
 
     const programs = [
@@ -58,6 +78,8 @@ function Workouts() {
         }
     ]
 
+    const navigate = useNavigate();
+    
     return (
         <>
         <div id='work-page' className='work-page flex justify-center items-center flex-col gap-12'>
@@ -81,10 +103,10 @@ function Workouts() {
                         <div className="program-content">
                             <h2>{prog.title}</h2>
                             <p>{prog.description}</p>
-                            <a id='cfm' href="/contectus">
+                            <button id='cfm' href="/contectus" onClick={() => navigate("/contectus")}>
                                 <span id='syp'>Click</span>
                                 <span id='syp'>Contact For More</span>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 ))}

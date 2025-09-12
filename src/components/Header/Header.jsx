@@ -171,13 +171,14 @@ function Header() {
 
             <div id="minheader" className={`${openmenu ? 'show' : ''} z-50`}>
                 <Link to='/' id='logo'>
-                    <img src="https://cdn.prod.website-files.com/65c0febf494dff5e0b629052/66051ffc719449e657e9ef71_logo.svg" alt="" />
+                    <img src="logoo.png" alt="" />
                 </Link>
+                
                 <div id="mininav">
                     {navItems.map((item) => (
                         <div key={item.name} className='mb-2'>
                             <div className='flex items-center justify-between cursor-pointer' onClick={() => item.children ? toggleDropdown(item.name) : null}>
-                                <NavLink id="navlinks" to={item.blink} className={({ isActive }) => `${isActive ? 'text-pinkAccent' : 'text-white'}`} >
+                                <NavLink id="navlinks" to={item.blink} className={({ isActive }) => `${isActive ? 'text-alFlow' : 'text-white'}`} >
                                     {item.name}
                                 </NavLink>
                                 {item.children && (
@@ -188,7 +189,7 @@ function Header() {
                             {item.children && openDropdown === item.name && (
                                 <div className="pl-4 mt-1 flex flex-col gap-1">
                                     {item.children.map((child) => (
-                                        <NavLink key={child.name} to={child.blink} className="text-white hover:text-pinkAccent text-sm px-2 py-1">
+                                        <NavLink key={child.name} to={child.blink} className="text-white hover:text-alFlow text-sm px-2 py-1">
                                             {child.name}
                                         </NavLink>
                                     ))}

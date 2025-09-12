@@ -86,7 +86,7 @@
   line-height: 1.5;
 }
 
-.program-content a {
+.program-content button {
     font-size: 14px;
     width: 180px;
     height: 2em;
@@ -103,14 +103,47 @@
     overflow: hidden;
 }
 
-.programs-container a:hover{
+.programs-container button:hover{
     border: 1px solid var(--alFlow);
     color: var(--alFlow);
     border-radius: 15px 0 15px 0;
     background-color: transparent;
 }
 
+
+#syp {
+    position: absolute;
+    white-space: nowrap;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    will-change: transform, opacity;
+}
+
+/* initial states */
 #syp:nth-child(1) {
+    transform: translateX(-150%); /* hidden left */
+    opacity: 0;
+}
+#syp:nth-child(2) {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* hover animation */
+#cfm:hover #syp:nth-child(1) {
+    transform: translateX(0);
+    opacity: 1;
+}
+#cfm:hover #syp:nth-child(2) {
+    transform: translateX(150%);
+    opacity: 0;
+}
+
+
+
+
+/* it lagging not optimized */
+
+/* #syp:nth-child(1) {
     position: absolute;
     left: -100%;
     transition: all 0.3s;
@@ -129,4 +162,6 @@
 
 .programs-container #cfm:hover #syp:nth-child(2) {
     left: -100%;
-}
+} */
+
+/* it lagging not optimized */

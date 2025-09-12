@@ -119,10 +119,15 @@
   color: #fff;
   padding: 60px 10%;
   font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4em;
 }
 
 .about-header {
-  max-width: 700px;
+  width: 88%;
   margin-bottom: 40px;
   margin: 10px;
   padding: 5px;
@@ -151,8 +156,8 @@
 }
 
 .about-content {
+  width: 95%;
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   display: flex;
   justify-content: center;
@@ -160,23 +165,24 @@
 }
 
 .about-img {
-  flex: 1 1 45%;
+  width: 40%;
+  height: 100%;
 }
 
 .about-img img {
   width: 100%;
-  display: block;
+  height: 100%;
 }
 
 .about-box {
-  flex: 1 1 50%;
+  width: 50%;
   padding: 30px;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 4em;
 }
 
 .vision{
@@ -186,6 +192,7 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px;
 }
 
 
@@ -196,6 +203,7 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px;
 }
 
 .values{
@@ -205,6 +213,7 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px;
 }
 .goal{
   background-color: var(--alFlow);
@@ -213,6 +222,7 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px;
 }
 
 .about-box h2 {
@@ -228,4 +238,27 @@
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 25px;
+}
+
+
+
+@media screen and (max-width:1022px) {
+  .about {
+    margin-bottom: 2em;
+    padding: 10px 2%;
+  }
+  .about-content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 80%;
+    height: 100%;
+  }
+
+  .about-box {
+    padding: 10px;
+    width: 100%;
+  }
 }

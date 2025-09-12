@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    overflow: hidden;
 }
 
 .join_cont{
@@ -28,7 +29,7 @@
 }
 .join_cont h1{
     margin-bottom: 25px;
-    font-size: clamp(35px,5vw,42px);
+    font-size: clamp(30px,5vw,42px);
     font-weight: 600;
     color: white;  
     line-height: 55px;

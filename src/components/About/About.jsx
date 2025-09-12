@@ -75,17 +75,14 @@ function About() {
           </h1>
           <p className="about-desc">
             Running Club’ commitment to excellence shines through in these
-            impressive stats, showcasing our dedication and value to our members
+            impressive stats, showcasing our <br /> dedication and value to our members
             and the running community.
           </p>
         </div>
 
         <div className="about-content">
           <div className="about-img">
-            <img
-              src="https://images.pexels.com/photos/3763883/pexels-photo-3763883.jpeg"
-              alt="Running Club"
-            />
+            <img src="https://images.pexels.com/photos/3763883/pexels-photo-3763883.jpeg" alt="Running Club"/>
           </div>
           <div className="about-box">
             <div className="vision">
