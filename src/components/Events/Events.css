@@ -23,5 +23,5 @@
 
 
 #e2{
-    background-color: #121212;
+    background-color: var(--vyflow);
 }

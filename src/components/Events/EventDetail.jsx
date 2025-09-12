@@ -36,16 +36,16 @@ function EventDetail() {
                         <h1>{event.tag}</h1>
 
                         <div className='flex items-center gap-2'>
-                            <IoCalendarClear className='text-pinkAccent' /><p>{event.date}</p>
+                            <IoCalendarClear className='text-lionDox' /><p>{event.date}</p>
                         </div>
                         <div className='flex items-center gap-2'>
-                            <FaUser className='text-pinkAccent'/><p>{event.compos}</p>
+                            <FaUser className='text-lionDox'/><p>{event.compos}</p>
                         </div>
                         <div className='flex items-center gap-2'>
-                            <FaClock className='text-pinkAccent'/><p>{event.time}</p>
+                            <FaClock className='text-lionDox'/><p>{event.time}</p>
                         </div>
                         <div className='flex items-center gap-2'>
-                            <GrLocationPin className='text-pinkAccent'/><p>{event.location}</p>
+                            <GrLocationPin className='text-lionDox'/><p>{event.location}</p>
                         </div>
                         
                         <div className='w-44 py-8 '>
@@ -60,7 +60,7 @@ function EventDetail() {
                     </div>
 
                     <div id="a3" className='relative p-8 flex'>
-                        <div id="dlow" className='absolute -top-10 left-0 flex justify-center items-center bg-pinkAccent w-max px-4 py-2'>
+                        <div id="dlow" className='absolute -top-10 left-0 flex justify-center items-center bg-lionDox w-max px-4 py-2'>
                             <h6 className=' uppercase'>More Information</h6>
                         </div>
                         <div id="m1" className=''>

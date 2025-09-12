@@ -1,7 +1,7 @@
 #events{
     width: 100%;
     height: 40vh;
-    background-color: #FF4960;
+    background-color: var(--alFlow);
 }
 
 #ebox1,#ebox2,#ebox3{
@@ -39,7 +39,7 @@
     transition: color 0.2s;
 }
 #ebox2 #tag:hover{
-    color: #FF4960;
+    color: var(--alFlow);
 }
 
 #ebox2 p{

@@ -50,16 +50,16 @@ function EventCard({id,image,tag,date,compos,time,location,ticketPrice}) {
                     </NavLink>
                     
                     <div className='flex items-center gap-2'>
-                        <IoCalendarClear className='text-pinkAccent' /><p> {date}</p>
+                        <IoCalendarClear className='text-lionDox' /><p> {date}</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <FaUser className='text-pinkAccent'/><p>{compos}</p>
+                        <FaUser className='text-lionDox'/><p>{compos}</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <FaClock className='text-pinkAccent'/><p>{time}</p>
+                        <FaClock className='text-lionDox'/><p>{time}</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <GrLocationPin className='text-pinkAccent'/><p>{location}</p>
+                        <GrLocationPin className='text-lionDox'/><p>{location}</p>
                     </div>
                     
                 
