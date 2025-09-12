@@ -272,7 +272,7 @@ function Home() {
 
                 <div id='spartD'>
                     <div className='flex flex-col justify-center items-center'>
-                        <text className=' text-alFlow my-5'>EVENTS</text>
+                        <text className=' text-lionDox my-5'>EVENTS</text>
                         <h2 className='text-5xl font-semibold text-white my-4' >Upcoming events</h2>
                     </div>
 
