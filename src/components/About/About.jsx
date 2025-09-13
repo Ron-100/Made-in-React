@@ -19,6 +19,7 @@ function About() {
 
   return (
     <>
+    <div id="theabout">
       <div id="about-page">
         <div id="ableyer" className="w-full flex justify-center items-end">
           <div
@@ -158,6 +159,7 @@ function About() {
       <Join />
       <LatestNews />
       <RunningClub />
+    </div>
     </>
   );
 }
