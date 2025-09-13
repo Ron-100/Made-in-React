@@ -54,13 +54,13 @@ function LatestNews() {
     ]
 
     return (
-        <div id="news">
+        <div id="news"> 
             <div id="news_cover">
                 <div id="top">
                     <h1>Latest news</h1>
                     <Button children={"VIEW MORE"} twich={'/news'} className={'w-36'}/>
                 </div> 
-
+ 
                 <div id="btm">
                     {info.map((inf, inx)=>(
                         <div id="cag" key={inx}>

@@ -16,7 +16,7 @@ function Testimo() {
 
         gsap.from('.testimonials-header',{
             opacity:0,
-            delay:1.5,
+            delay:1.2,
             duration:1,
         })
     })
@@ -27,42 +27,42 @@ function Testimo() {
             role: "Marathon Finisher",
             feedback:
             "Joining the club completely transformed my running journey. The coaches are supportive, and the community is amazing!",
-            img: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+            img: "https://cdn.pixabay.com/photo/2018/08/01/06/43/girl-3576679_1280.jpg",
         },
         {
             name: "David Miller",
             role: "Beginner Runner",
             feedback:
             "I started as a beginner, and within months I could run 10K comfortably. The training plans are super effective.",
-            img: "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
+            img: "https://cdn.pixabay.com/photo/2020/05/24/02/00/barber-shop-5212059_1280.jpg",
         },
         {
             name: "Emily Chen",
             role: "Trail Enthusiast",
             feedback:
             "The trail runs are my favorite! I’ve built endurance and confidence thanks to this wonderful group.",
-            img: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
+            img: "https://cdn.pixabay.com/photo/2020/06/19/06/27/call-5315851_1280.jpg",
         },
         {
             name: "James Parker",
             role: "Half-Marathoner",
             feedback:
             "The guidance and motivation here helped me run my first half-marathon. Truly a life-changing experience.",
-            img: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg",
+            img: "https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_1280.jpg",
         },
         {
             name: "Liy Dox",
             role: "Enthusiast",
             feedback:
             "The trail runs are my favorite! I’ve built endurance and confidence thanks to this wonderful group.",
-            img: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg",
+            img: "https://cdn.pixabay.com/photo/2017/08/02/17/45/people-2572621_1280.jpg",
         },
         {
             name: "Goldy Parker",
             role: "Marathoner",
             feedback:
             "The guidance and motivation here helped me run my first half-marathon. Truly a life-changing experience.",
-            img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
+            img: "https://cdn.pixabay.com/photo/2017/06/19/17/24/boy-2420289_1280.jpg",
         },
     ]
 

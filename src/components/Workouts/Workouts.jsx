@@ -62,37 +62,37 @@ function Workouts() {
             title: "Jogging Program",
             description:
             "We offers guided sessions to improve endurance and strength, making running enjoyable and rewarding.",
-            img: "https://images.pexels.com/photos/4348631/pexels-photo-4348631.jpeg",
+            img: "https://cdn.pixabay.com/photo/2016/11/14/03/06/woman-1822459_1280.jpg",
         },
         {
             title: "Marathon Program",
             description:
             "From long runs to speed work, we'll prepare you mentally and physically for race day success.",
-            img: "https://images.pexels.com/photos/4348624/pexels-photo-4348624.jpeg",
+            img: "https://cdn.pixabay.com/photo/2021/05/14/08/44/running-6252827_1280.jpg",
         },
         {
             title: "Triathlon Program",
             description:
             "Tailored workouts and skill development sessions will help you excel in swimming, cycling, and running.",
-            img: "https://images.pexels.com/photos/2803158/pexels-photo-2803158.jpeg",
+            img: "https://cdn.pixabay.com/photo/2023/10/04/14/15/man-8293794_1280.jpg",
         },
         {
             title: "Cycling Program",
             description:
             "Boost your stamina and improve speed with structured indoor and outdoor cycling workouts.",
-            img: "https://images.pexels.com/photos/878151/pexels-photo-878151.jpeg",
+            img: "https://cdn.pixabay.com/photo/2019/05/18/14/42/jogging-4211946_1280.jpg",
         },
         {
             title: "Yoga Program",
             description:
             "Enhance flexibility, balance, and mental focus through guided yoga sessions suitable for all levels.",
-            img: "https://images.pexels.com/photos/7337618/pexels-photo-7337618.jpeg",
+            img: "https://cdn.pixabay.com/photo/2020/01/21/11/39/running-4782722_1280.jpg",
         },
         {
             title: "Strength Training",
             description:
             "Develop muscle strength and endurance with customized weight training and bodyweight exercises.",
-            img: "https://images.pexels.com/photos/4024914/pexels-photo-4024914.jpeg",
+            img: "https://cdn.pixabay.com/photo/2022/03/08/21/20/running-7056590_1280.jpg",
         }
     ]
 

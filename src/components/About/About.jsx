@@ -16,7 +16,7 @@ function About() {
       scrub: 2,
     });
   });
-
+ 
   return (
     <>
     <div id="theabout">
@@ -83,7 +83,7 @@ function About() {
 
         <div className="about-content">
           <div className="about-img">
-            <img src="https://images.pexels.com/photos/3763883/pexels-photo-3763883.jpeg" alt="Running Club"/>
+            <img src="https://cdn.pixabay.com/photo/2018/08/06/03/42/running-3586817_1280.jpg" alt="Running Club"/>
           </div>
           <div className="about-box">
             <div className="vision">
@@ -130,7 +130,7 @@ function About() {
         <div className="about-content">
           <div className="about-img">
             <img
-              src="https://images.pexels.com/photos/5310782/pexels-photo-5310782.jpeg"
+              src="https://media.istockphoto.com/id/856985422/photo/healthy-young-woman-on-morning-run.jpg?s=612x612&w=0&k=20&c=xwqjA9PJ2Wu1IubwLzi7N0Td83MNiS5r7MmseIt-_KE="
               alt="Running Club"
             />
           </div>

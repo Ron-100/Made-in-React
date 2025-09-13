@@ -12,7 +12,7 @@ function News() {
       });
 
       tl.from("#news-page h1", {
-        delay:0.8,
+        delay:0.2,
         opacity: 0,
         y: 60
       })
@@ -20,6 +20,14 @@ function News() {
         opacity: 0,
         y: 40
       }, "-=0.4"); // start slightly earlier for smooth flow
+
+      
+      // blogs
+      gsap.from('.blog-card',{
+          opacity:0,
+          yPercent:170,
+          duration:0.5,
+      })
     });
 
 
@@ -48,7 +56,7 @@ function News() {
             title: "Must-Have Equipment for Every Runner",
             description:
             "Explore essential gear that every runner should consider adding to their arsenal to enhance running comfort.",
-            img: "https://images.pexels.com/photos/3760259/pexels-photo-3760259.jpeg",
+            img: "https://cdn.pixabay.com/photo/2020/03/23/17/14/run-4961494_1280.jpg",
         },
         {
             id: 2,
@@ -56,7 +64,7 @@ function News() {
             title: "Trail Running Adventures: Exploring Nature’s Gym",
             description:
             "Join us on a journey through scenic trail runs and learn about Running Club’s exciting trail training outings.",
-            img: "https://images.pexels.com/photos/2526883/pexels-photo-2526883.jpeg",
+            img: "https://cdn.pixabay.com/photo/2019/07/23/16/28/trees-4358107_1280.jpg",
         },
         {
             id: 3,
@@ -64,7 +72,7 @@ function News() {
             title: "The Benefits of Trail Running",
             description:
             "Explore the many advantages of hitting the trails and why trail running has become increasingly popular among runners of all levels.",
-            img: "https://images.pexels.com/photos/4944975/pexels-photo-4944975.jpeg",
+            img: "https://cdn.pixabay.com/photo/2023/08/11/12/29/woman-8183516_1280.jpg",
         },
         {
             id: 4,
@@ -72,7 +80,7 @@ function News() {
             title: "Work, Life, and Running: Tips from Busy Runners",
             description:
             "Discover how Running Club members successfully balance their careers, personal lives, and their passion for running.",
-            img: "https://images.pexels.com/photos/4348624/pexels-photo-4348624.jpeg",
+            img: "https://cdn.pixabay.com/photo/2020/05/05/05/16/man-5131486_1280.jpg",
         },
         {
             id: 5,
@@ -80,7 +88,7 @@ function News() {
             title: "Ultimate Challenge: A Guide to Marathon Running",
             description:
             "From training tips and race day strategies to the emotional sense of accomplishment that comes with crossing the finish line of a 26.2-mile journey.",
-            img: "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg",
+            img: "https://cdn.pixabay.com/photo/2016/07/11/03/57/jogging-1509003_1280.jpg",
         },
         {
             id: 6,
@@ -88,7 +96,7 @@ function News() {
             title: "Mastering the Art of Interval Training",
             description:
             "Interval training has emerged as a powerful method for improving cardiovascular fitness, boosting endurance, and torching calories.",
-            img: "https://images.pexels.com/photos/2036998/pexels-photo-2036998.jpeg",
+            img: "https://cdn.pixabay.com/photo/2018/07/23/06/06/running-3556088_1280.jpg",
         },
     ];
 

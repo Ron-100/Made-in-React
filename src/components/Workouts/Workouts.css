@@ -2,7 +2,7 @@
     overflow: hidden;
 }
 #work-page{
-    background-image: url('https://images.pexels.com/photos/4652250/pexels-photo-4652250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-image: url('https://cdn.pixabay.com/photo/2023/03/25/19/09/runner-7876675_1280.jpg'),linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
