@@ -68,35 +68,37 @@ function OurCoaches() {
 
   return (
     <>
-        <div id="coachHeader">
-            <h1>Meet our coaches</h1>
-        </div>
-
-        
-        <div className="coaches-page">
-            <div className="coaches-header">
-            <h1>Our Coaches</h1>
-            <p>
-                Meet the experienced and passionate coaches who guide our running
-                community.
-            </p>
+        <div id="ourcoaches">
+            <div id="coachHeader">
+                <h1>Meet our coaches</h1>
             </div>
 
-            <div className="coaches-grid">
-            {coaches.map((coach, index) => (
-                <div key={index} className="coach-card">
-                <div className="coach-img">
-                    <img src={coach.img} alt={coach.name} loading="lazy" />
+            
+            <div className="coaches-page">
+                <div className="coaches-header">
+                <h1>Our Coaches</h1>
+                <p>
+                    Meet the experienced and passionate coaches who guide our running
+                    community.
+                </p>
                 </div>
-                <h2>{coach.name}</h2>
-                <h3>{coach.role}</h3>
-                <p>{coach.bio}</p>
-                </div>
-            ))}
-            </div>
-        </div>
 
-        <RunningClub />
+                <div className="coaches-grid">
+                {coaches.map((coach, index) => (
+                    <div key={index} className="coach-card">
+                    <div className="coach-img">
+                        <img src={coach.img} alt={coach.name} loading="lazy" />
+                    </div>
+                    <h2>{coach.name}</h2>
+                    <h3>{coach.role}</h3>
+                    <p>{coach.bio}</p>
+                    </div>
+                ))}
+                </div>
+            </div>
+
+            <RunningClub />
+        </div>
     </>
   );
 }

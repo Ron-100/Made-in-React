@@ -69,6 +69,7 @@ function Testimo() {
 
   return (
     <>
+    <div id="theteste">
       <div className="testi w-full">
         <h1>Testimonials</h1>
       </div>
@@ -90,8 +91,9 @@ function Testimo() {
           ))}
         </div>
       </div>
-
       <RunningClub />
+    </div>
+
     </>
   );
 }

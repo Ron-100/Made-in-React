@@ -40,11 +40,12 @@ function FAQ() {
 
   return (
     <>
-      <div className="faq">
-        <h1>
-          Frequently asked <br /> questions
-        </h1>
-      </div>
+      <div id="thefaq">
+        <div className="faq">
+          <h1>
+            Frequently asked <br /> questions
+          </h1>
+        </div>
 
       <div className="faq-page">
         <div className="faq-header">
@@ -73,6 +74,7 @@ function FAQ() {
       </div>
 
       <RunningClub />
+      </div>
     </>
   );
 }

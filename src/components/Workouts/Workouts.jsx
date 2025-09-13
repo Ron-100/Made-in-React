@@ -100,37 +100,39 @@ function Workouts() {
     
     return (
         <>
-        <div id='work-page' className='work-page flex justify-center items-center flex-col gap-12'>
-            <h1>Meet our most effective <br />workout programs</h1>
-            <p>We offer a variety of programs tailored to suit every <br /> level of runner, from beginners to seasoned athletes.</p>
-            <div id="b">
-                <Button children={"CONTACT US"} twich={'/contectus'} className={'w-40'}/>
+        <div id="theworkouts">
+            <div id='work-page' className='work-page flex justify-center items-center flex-col gap-12'>
+                <h1>Meet our most effective <br />workout programs</h1>
+                <p>We offer a variety of programs tailored to suit every <br /> level of runner, from beginners to seasoned athletes.</p>
+                <div id="b">
+                    <Button children={"CONTACT US"} twich={'/contectus'} className={'w-40'}/>
+                </div>
             </div>
-        </div>
 
-        <div className='workhead flex justify-end items-center flex-col gap-4'>
-            <p>Workouts</p>
-            <h1>The best programs for you</h1>
-        </div>
+            <div className='workhead flex justify-end items-center flex-col gap-4'>
+                <p>Workouts</p>
+                <h1>The best programs for you</h1>
+            </div>
 
-        <div className='prog w-full h-auto pb-20'>
-            <div className="programs-container">
-                {programs.map((prog, index) => (
-                    <div className="program-card" key={index}>
-                        <img src={prog.img} alt={prog.title} />
-                        <div className="program-content">
-                            <h2>{prog.title}</h2>
-                            <p>{prog.description}</p>
-                            <button id='cfm' onClick={() => navigate("/contectus")}>
-                                <span id='syp'>Click</span>
-                                <span id='syp'>Contact For More</span>
-                            </button>
+            <div className='prog w-full h-auto pb-20'>
+                <div className="programs-container">
+                    {programs.map((prog, index) => (
+                        <div className="program-card" key={index}>
+                            <img src={prog.img} alt={prog.title} />
+                            <div className="program-content">
+                                <h2>{prog.title}</h2>
+                                <p>{prog.description}</p>
+                                <button id='cfm' onClick={() => navigate("/contectus")}>
+                                    <span id='syp'>Click</span>
+                                    <span id='syp'>Contact For More</span>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
+            <RunningClub/>
         </div>
-        <RunningClub/>
         </>
     )
 }
