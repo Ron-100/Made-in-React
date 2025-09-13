@@ -44,11 +44,17 @@ function Events() {
 
             <div id="e2" className=' w-full min-h-screen flex justify-center items-center'>
                 <div id="ep2" className='max-w-6xl px-4 py-12'>
-                    {events.map((event)=>(
+                    {events.length > 0 ? (
+                        events.map((event)=>(
                         <div key={event.id}>
                             <EventCard {...event}/>
                         </div>
-                    ))}
+                    ))
+                    ) : (
+                        <p className='text-center text-gray-500'>
+                            No events available
+                        </p>
+                    )}
                 </div>
             </div>
         </div>
