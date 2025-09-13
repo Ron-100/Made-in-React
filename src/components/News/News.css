@@ -1,5 +1,5 @@
 #news-page{
-    background-image: url('https://images.pexels.com/photos/5036846/pexels-photo-5036846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-image: url('https://cdn.pixabay.com/photo/2019/03/19/16/58/jog-4066243_1280.jpg'),linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -26,6 +26,14 @@ function ContectUs() {
             direction:1,
         })
 
+        
+        sync.from('#con_mid #gol img',{
+            scale: 0,
+            opacity:0,
+            duration:0.5,
+        })
+
+
         sync.from('#con_lft',{
             opacity:0,
             x:-200,
@@ -83,7 +91,7 @@ function ContectUs() {
 
                     <div id="con_mid" className='w-1/3 h-full flex justify-center items-center px-2'>
                         <div id="gol" className='w-11/12 h-5/6 rounded-full bg-orange-300 bg-opacity-75 relative overflow-hidden flex justify-center items-center p-2'>
-                            <img src="https://images.pexels.com/photos/5039659/pexels-photo-5039659.jpeg" alt="" className='w-full h-full rounded-full object-cover object-center'/>
+                            <img src="https://media.istockphoto.com/id/1093290750/photo/sportsman-running-on-asphalt-road.jpg?s=612x612&w=0&k=20&c=UTsmXO6BIMDOdE5-GlxQkVtQlzRKTDTGl1OW2Q589H4=" alt="" className='w-full h-full rounded-full object-cover object-center'/>
                         </div>
                     </div>
                     

@@ -15,6 +15,84 @@ function About() {
       delay: 0.4,
       scrub: 2,
     });
+
+    gsap.from('#abspartA',{
+      opacity:0,
+      duration:0.8,
+      y:150,
+      scrollTrigger:{
+        trigger:'#abspartA',
+        scroller:'body',
+        start:'top 100%',
+        end:'top 0%',
+        markers:true
+      }
+    })
+
+    gsap.from('.about-header',{
+      opacity:0,
+      duration:0.8,
+      delay:0.5,
+      x:-150,
+      scrollTrigger:{
+        trigger:'.about-header',
+        scroller:'body',
+        start:'top 100%',
+        end:'top 0%',
+        markers:true
+      }
+    })
+
+    gsap.from('.about-img',{
+      opacity:0,
+      duration:1,
+      delay:0.2,
+      scrollTrigger:{
+        trigger:'.about-img',
+        scroller:'body',
+        start:'top 100%',
+        end:'top 0%',
+        markers:true
+      }
+    })
+
+    let vm = gsap.timeline({
+      scrollTrigger:{
+        trigger:'.about-img',
+        scroller:'body',
+        start:'top 100%',
+        end:'top 0%',
+        markers:true
+      }
+    })
+
+    vm.from('.vision',{
+      opacity:0,
+      x:280,
+      direction:1
+    })
+
+    vm.from('.mission',{
+      opacity:0,
+      x:280,
+      direction:1
+    },'-=0.2')
+
+    vm.from('.values',{
+      opacity:0,
+      x:280,
+      direction:1
+    })
+
+    vm.from('.goal',{
+      opacity:0,
+      x:280,
+      direction:1
+    },'-=0.2')
+
+
+
+
   });
  
   return (
@@ -83,7 +161,7 @@ function About() {
 
         <div className="about-content">
           <div className="about-img">
-            <img src="https://cdn.pixabay.com/photo/2018/08/06/03/42/running-3586817_1280.jpg" alt="Running Club"/>
+            <img src="https://cdn.pixabay.com/photo/2024/09/05/16/44/woman-9025424_1280.jpg" alt="Running Club"/>
           </div>
           <div className="about-box">
             <div className="vision">
@@ -130,7 +208,7 @@ function About() {
         <div className="about-content">
           <div className="about-img">
             <img
-              src="https://media.istockphoto.com/id/856985422/photo/healthy-young-woman-on-morning-run.jpg?s=612x612&w=0&k=20&c=xwqjA9PJ2Wu1IubwLzi7N0Td83MNiS5r7MmseIt-_KE="
+              src="https://cdn.pixabay.com/photo/2023/07/24/18/23/ai-generated-8147634_1280.jpg"
               alt="Running Club"
             />
           </div>
