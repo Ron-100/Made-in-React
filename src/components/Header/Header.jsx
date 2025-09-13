@@ -178,7 +178,7 @@ function Header() {
                     {navItems.map((item) => (
                         <div key={item.name} className='mb-2'>
                             <div className='flex items-center justify-between cursor-pointer' onClick={() => item.children ? toggleDropdown(item.name) : null}>
-                                <NavLink id="navlinks" to={item.blink} className={({ isActive }) => `${isActive ? 'text-alFlow' : 'text-white'}`} >
+                                <NavLink id="navlinks" to={item.blink} className={({ isActive }) => `${isActive ? 'text-lionDox' : 'text-white'} focus:text-lionDox outline-none`} >
                                     {item.name}
                                 </NavLink>
                                 {item.children && (
@@ -189,7 +189,7 @@ function Header() {
                             {item.children && openDropdown === item.name && (
                                 <div className="pl-4 mt-1 flex flex-col gap-1">
                                     {item.children.map((child) => (
-                                        <NavLink key={child.name} to={child.blink} className="text-white hover:text-alFlow text-sm px-2 py-1">
+                                        <NavLink key={child.name} to={child.blink} className="text-white hover:text-lionDox text-sm px-2 py-1 focus:text-lionDox transition-colors outline-none">
                                             {child.name}
                                         </NavLink>
                                     ))}
