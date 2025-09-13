@@ -165,6 +165,7 @@ function Home() {
 
     return (
         <>
+        <div id="thehome">
             <div id='home-page' className='flex justify-center items-end'>
                 <div id='leyer' className='w-full flex justify-center items-center' >
                     <div id='hContent' className='w-3/4 h-full flex flex-col justify-center gap-6'>
@@ -292,6 +293,7 @@ function Home() {
 
             <RunningClub />
             
+        </div>
         </>
         
     )
