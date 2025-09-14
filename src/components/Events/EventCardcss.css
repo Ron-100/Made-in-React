@@ -2,6 +2,11 @@
     width: 100%;
     height: 40vh;
     background-color: var(--alFlow);
+    transition: all, 0.4s;
+}
+
+#events:hover{
+    transform: scale(1.04);
 }
 
 #ebox1,#ebox2,#ebox3{

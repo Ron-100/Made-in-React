@@ -33,32 +33,34 @@ function Events() {
 
     return (
         <>
-        <div id='event-page'>
-            
-            <div id="e1" className='flex justify-center items-center'>
-                <div id="ep1" className='max-w-6xl px-4'>
-                    <h1>Discover Upcoming Running Events</h1>
-                    <p>Explore our exhilarating lineup of running events that cater to every level of runner. From fun runs to marathons, scenic trails to city streets, there's a race for everyone.</p>
+        <div id="theevent">
+            <div id='event-page'>
+                
+                <div id="e1" className='flex justify-center items-center'>
+                    <div id="ep1" className='max-w-6xl px-4'>
+                        <h1>Discover Upcoming Running Events</h1>
+                        <p>Explore our exhilarating lineup of running events that cater to every level of runner. From fun runs to marathons, scenic trails to city streets, there's a race for everyone.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div id="e2" className=' w-full min-h-screen flex justify-center items-center'>
-                <div id="ep2" className='max-w-6xl px-4 py-12'>
-                    {events.length > 0 ? (
-                        events.map((event)=>(
-                        <div key={event.id}>
-                            <EventCard {...event}/>
-                        </div>
-                    ))
-                    ) : (
-                        <p className='text-center text-gray-500'>
-                            No events available
-                        </p>
-                    )}
+                <div id="e2" className=' w-full min-h-screen flex justify-center items-center'>
+                    <div id="ep2" className='max-w-6xl px-4 py-12'>
+                        {events.length > 0 ? (
+                            events.map((event)=>(
+                            <div key={event.id}>
+                                <EventCard {...event}/>
+                            </div>
+                        ))
+                        ) : (
+                            <p className='text-center text-gray-500'>
+                                No events available
+                            </p>
+                        )}
+                    </div>
                 </div>
             </div>
+            <RunningClub/>
         </div>
-        <RunningClub/>
         </>
     )
 }

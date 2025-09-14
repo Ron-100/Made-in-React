@@ -202,7 +202,7 @@ function Home() {
                 <div id="spartB">
                     <div id="div1">
                         <div id="imge" className='w-full h-1/2 justify-end relative'>  
-                            <img src="/man_runner.webp" alt="" className='w-4/5'/>
+                            <img src="https://cdn.pixabay.com/photo/2017/08/07/11/22/building-2602802_1280.jpg" alt="" className='w-4/5'/>
                             <div className="w-36 h-full absolute top-0 left-0">
                                 <div id='ruuns' className="w-full h-full flex flex-col justify-center items-center rotate-[-90deg] gap-8">
                                     <p className="font-semibold text-xl z-40">RUNNING</p>
@@ -213,8 +213,8 @@ function Home() {
                         </div>
                         
                         <div id="imge" className='w-full h-1/2 justify-between'>
-                            <img id='go1' src="/woman_runs.webp" alt="" />
-                            <img id='go' src="/modern-running.png" alt="" />
+                            <img id='go1' src="https://cdn.pixabay.com/photo/2023/03/10/14/04/sports-7842393_1280.jpg" alt="" />
+                            <img id='go' src="run.png" alt="" />
                         </div>
                     </div>
                     <div id="div2">

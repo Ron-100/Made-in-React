@@ -10,9 +10,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addtoCart, reomvetoCart } from '../../store/AddCartSlice';
 import { BsBookmarkStarFill } from "react-icons/bs";
 import { BsBookmarkStar } from "react-icons/bs";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 
- 
 
 
 function EventCard({id,image,tag,date,compos,time,location,ticketPrice}) {
@@ -31,7 +32,6 @@ function EventCard({id,image,tag,date,compos,time,location,ticketPrice}) {
     let removeEvent = () =>{
         dispatch(reomvetoCart(id))
     }
-
 
 
 

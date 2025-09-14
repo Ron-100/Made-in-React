@@ -1,6 +1,7 @@
 #theworkouts{
     overflow: hidden;
 }
+
 #work-page{
     background-image: url('https://cdn.pixabay.com/photo/2023/03/25/19/09/runner-7876675_1280.jpg'),linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background-position: center;
@@ -64,6 +65,13 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.program-card:hover{
+    border-radius: 8px;
+    border: 2px solid var(--alFlow);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .program-card img {

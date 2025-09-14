@@ -25,7 +25,7 @@ function About() {
         scroller:'body',
         start:'top 100%',
         end:'top 0%',
-        markers:true
+        // markers:true
       }
     })
 
@@ -39,7 +39,7 @@ function About() {
         scroller:'body',
         start:'top 100%',
         end:'top 0%',
-        markers:true
+        // markers:true
       }
     })
 
@@ -52,7 +52,7 @@ function About() {
         scroller:'body',
         start:'top 100%',
         end:'top 0%',
-        markers:true
+        // markers:true
       }
     })
 
@@ -62,31 +62,35 @@ function About() {
         scroller:'body',
         start:'top 100%',
         end:'top 0%',
-        markers:true
+        // markers:true
       }
     })
 
     vm.from('.vision',{
       opacity:0,
-      x:280,
+      scale:0.9,
+      x:-100,
       direction:1
     })
 
     vm.from('.mission',{
       opacity:0,
-      x:280,
+      scale:0.9,
+      x:100,
       direction:1
     },'-=0.2')
 
     vm.from('.values',{
       opacity:0,
-      x:280,
+      scale:0.9,
+      x:-100,
       direction:1
     })
 
     vm.from('.goal',{
       opacity:0,
-      x:280,
+      scale:0.9,
+      x:100,
       direction:1
     },'-=0.2')
 
