@@ -56,12 +56,12 @@ function Footer() {
                         </div>
                         <div id="box3">
                             <div id="grider">
-                                <div id="gb"><img onClick={imglink} src="https://images.pexels.com/photos/4944975/pexels-photo-4944975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" /></div>
-                                <div id="gb"><img onClick={imglink} src="https://images.pexels.com/photos/7432/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" /></div>
-                                <div id="gb"><img onClick={imglink} src="https://images.pexels.com/photos/7880193/pexels-photo-7880193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" /></div>
-                                <div id="gb"><img onClick={imglink} src="https://images.pexels.com/photos/5319579/pexels-photo-5319579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" /></div>
-                                <div id="gb"><img onClick={imglink} src="https://images.pexels.com/photos/8454933/pexels-photo-8454933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" /></div>
-                                <div id="gb"><img onClick={imglink} src="https://images.pexels.com/photos/1390403/pexels-photo-1390403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" /></div>
+                                <div id="gb"><img onClick={imglink} src="https://cdn.pixabay.com/photo/2022/09/11/12/13/woman-7446625_1280.jpg" alt="" /></div>
+                                <div id="gb"><img onClick={imglink} src="https://cdn.pixabay.com/photo/2024/05/16/14/43/woman-8766131_1280.png" alt="" /></div>
+                                <div id="gb"><img onClick={imglink} src="https://cdn.pixabay.com/photo/2016/09/18/16/52/shoes-1678590_1280.jpg" alt="" /></div>
+                                <div id="gb"><img onClick={imglink} src="https://cdn.pixabay.com/photo/2022/08/17/15/45/running-7392835_1280.jpg" alt="" /></div>
+                                <div id="gb"><img onClick={imglink} src="https://cdn.pixabay.com/photo/2024/03/27/21/47/ai-generated-8659982_1280.png" alt="" /></div>
+                                <div id="gb"><img onClick={imglink} src="https://cdn.pixabay.com/photo/2021/12/06/09/07/lifeguard-6849601_1280.jpg" alt="" /></div>
                             </div>
                         </div>
                     </div>

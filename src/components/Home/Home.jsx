@@ -167,7 +167,7 @@ function Home() {
         <>
         <div id="thehome">
             <div id='home-page' className='flex justify-center items-end'>
-                <div id='leyer' className='w-full flex justify-center items-center' >
+                <div id='leyer' className='w-full h-full flex justify-center items-center' >
                     <div id='hContent' className='w-3/4 h-full flex flex-col justify-center gap-6'>
                         <h1 className=' text-white font-semibold'>Run with Passion and Purpose</h1>
                         <p className=''>Lace-up your shoes, set your goals, and let's run together towards a healthier, happier, and faster you.</p>

@@ -35,7 +35,7 @@ function Events() {
         <>
         <div id="theevent">
             <div id='event-page'>
-                
+                 
                 <div id="e1" className='flex justify-center items-center'>
                     <div id="ep1" className='max-w-6xl px-4'>
                         <h1>Discover Upcoming Running Events</h1>
