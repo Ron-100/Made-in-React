@@ -63,10 +63,16 @@ function Home() {
         
         // spartA
 
+        aSync.from('#hwcase',{
+            backgroundColor:'transparent',
+            direction:1
+        })
+
         aSync.from('#stext',{
             x:-200,
             direction:1,
             opacity:0,
+            backgroundColor:'transparent'
         })
         aSync.from('#fcount',{
             y:20,
