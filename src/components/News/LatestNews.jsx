@@ -54,7 +54,7 @@ function LatestNews() {
     ]
 
     return (
-        <div id="news"> 
+        <div id="news" className='relative'> 
             <div id="news_cover">
                 <div id="top">
                     <h1>Latest news</h1>

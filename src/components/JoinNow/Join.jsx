@@ -5,7 +5,7 @@ import Button from '../Button.jsx'
 function Join({url, route}) {
     
     return (
-        <div id="join">
+        <div id="join" className='relative'>
             <div className="join_cont">
                 <p>GET IN TOUCH</p>
                 <h1>Take the first step towards <br /> your running goals today!</h1>
