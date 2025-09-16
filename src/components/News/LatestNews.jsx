@@ -21,7 +21,7 @@ function LatestNews() {
         newsline.from('#btm',{
             opacity:0,
             y:-200,
-            duration:1,
+            duration:0.8,
             delay:0.2,
         })
         

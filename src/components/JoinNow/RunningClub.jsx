@@ -33,8 +33,10 @@ function RunningClub() {
 
         tink.from('.join-card',{
             opacity:0,
-            x:-180,
-            duration:1
+            y:100,
+            duration:1,
+            delay:0.2,
+            ease: "elastic.out(1,0.3)"
         })
 
         tink.from('.join-title',{
