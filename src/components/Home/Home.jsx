@@ -225,15 +225,15 @@ function Home() {
                     <div id='stext' className=''>Our commitment to excellence has led to these impressive figures that showcase our dedication, hard work, and the value we bring to our customers.</div>
                     <div id='counts' className=' flex justify-end items-center '>
                         <div id='fcount' className='flex flex-col items-start flex-shrink'>
-                            <h1>785+</h1>
+                            <h1>1085+</h1>
                             <h4>Kilometers Run</h4>
                         </div>
                         <div id='fcount' className='flex flex-col items-center flex-shrink'>
-                            <h1>145+</h1>
+                            <h1>225+</h1>
                             <h4>Location</h4>
                         </div>
                         <div id='fcount' className='flex flex-col items-start flex-shrink'>
-                            <h1>3,5k</h1>
+                            <h1>10,5k</h1>
                             <h4>Runners</h4>
                         </div>
                     </div>

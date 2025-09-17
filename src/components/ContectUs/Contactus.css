@@ -33,7 +33,7 @@
 .contact-form {
   width: 90%;
   height: 80%;
-  background: #202020; 
+  background: transparent; 
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -44,8 +44,8 @@
 .contact-form input,
 .contact-form textarea {
     width: 90%;
-    background: #3b1d20; /* Dark reddish background */
-    border: 1px solid var(--alFlow); /* Red border */
+    background: rgba(120, 120, 120, 0.144); /* Dark reddish background */
+    border-bottom: 1px solid var(--alFlow); /* Red border */
     color: white;
     padding: 15px;
     font-size: 16px;
@@ -74,10 +74,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 20%;
     height: 10%;
-    background: var(--alFlow);
-    border: none;
+    background:transparent;
+    border-top: 1px solid var(--alFlow);
+    border-bottom: 1px solid var(--alFlow);
     color: white;
     padding: 15px;
     font-size: 15px;
@@ -86,9 +87,30 @@
 }
 
 .contact-form button:hover {
+    width: 90%;
     border: 1px solid var(--alFlow);
-  background: transparent; 
+    background: var(--alFlow); 
 }
+
+@media screen and (max-width:500px) {
+
+    .contact-form{
+        padding: 20px 0px 20px 0px;
+    }
+
+    .contact-form input{
+        width: 100%;
+    }
+
+    .contact-form textarea{
+        width: 100%;
+    }
+    
+    .contact-form button {
+        width: 100%;
+    }
+}
+
 
 
 #text{
@@ -129,6 +151,11 @@
         height: auto;
     }
 
+    .contact-form input,
+    .contact-form textarea {
+        background: rgba(120, 120, 120, 0); /* Dark reddish background */
+    }
+
     #fbox{
         flex-direction: column;
         gap: 4em;
@@ -146,8 +173,9 @@
     }
 }
 
+
 #con_spartC {
-    margin: 4em auto;
+    margin: 10em auto;
     max-width: 1152px;
     display: flex;
     justify-content: center;
@@ -170,39 +198,39 @@
     text-align: center;
 }
 
-h9{
-    font-size: clamp(10px,90%,24px);
-}
-h7{
-    font-size: 24px;
-}
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
     #con_spartC {
-        margin: 5em auto;
+        margin: 0em auto;
+        padding: 0;
     }
+
+    
     #con_orbit{
         flex-direction: column;
         height: auto;
+        gap: 2em;
+    }
+    
+    #con_lrwrap{
+        width: 100%;
+        gap: 2em;
     }
 
     #con_lft{
-        width: 80%;
+        width: 100%;
+        gap: 2em;
     }
-    #con_lft #con_itm1,#con_itm2{
+    #con_lft #con_itm1,#con_itm1{
         align-items: start;
-        margin: 1.8em 0;
-    }
-
-    #con_lft h9{
-        text-align: start;
     }
 
     #con_mid{
         width: 100%;
-        margin: 1em 0;
+        margin: 25px 0px;
     }
     #con_rth{
-        width: 80%;
+        width: 100%;
+        gap: 2em;
     }
 }
