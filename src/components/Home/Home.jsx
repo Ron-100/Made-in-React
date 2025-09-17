@@ -142,7 +142,7 @@ function Home() {
             y:50,
             opacity:0,
             duration:0.5,
-            delay:0.4
+            delay:0.1
         },'op')
 
         cSync.from('#gol',{

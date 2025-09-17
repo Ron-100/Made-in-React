@@ -135,14 +135,14 @@ form{
     align-items: center;
 }
 
-input{
+#box4 form input{
     padding-left: 12px;
     width: 70%;
     height: 40px;
     font-size: 14px;
 }
 
-input::placeholder{
+#box4 form input::placeholder{
     color: black;
 }
 

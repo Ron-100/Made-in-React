@@ -66,7 +66,7 @@ function Footer() {
                         </div>
                     </div>
                     <div id="box4">
-                        <form>
+                        <form> 
                             <input type="email" name='email' id='inpEmali' placeholder='Enter your email'/>
                             <button id='eSubbtn'>&#10153;</button>
                         </form>
