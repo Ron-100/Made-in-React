@@ -61,6 +61,16 @@ function Header() {
         { name: 'News', blink: '/news' },
     ]
 
+    const [cartOpen, setCartOpen] = useState(false);
+
+    const toggleCart = () => {
+        setCartOpen(prev => !prev);
+    };
+
+    const closeCart = () => {
+        setCartOpen(false);
+    };
+
     //////////////////////////////////////////
     
     // const {contextSafe} = useGSAP() //not need now, write for recall 
@@ -75,20 +85,24 @@ function Header() {
             duration:1,
         })
 
-        stepIt.from('#boxB',{
+        stepIt.from('#boxB #nvit',{
             opacity:0,
+            y:-20,
+            stagger:0.1,
             direction:0.1
         },'-=0.8')
 
         stepIt.from('#cart',{
+            y:-20,      
+            y:-20,
             opacity:0,
             direction:0.1
-        })
+        },'-=0.4')
        
-        stepIt.from('#boxC',{
+        stepIt.from('#boxC',{ 
             opacity:0,
             direction:0.1
-        })
+        },'-=0.2')
     })
     
 
@@ -112,18 +126,6 @@ function Header() {
 
     //////////////////////////////////////////
 
-    const [cartOpen, setCartOpen] = useState(false);
-
-    const toggleCart = () => {
-        setCartOpen(prev => !prev);
-    };
-
-    const closeCart = () => {
-        setCartOpen(false);
-    };
-
-    
-
 
     return (
         <>
@@ -136,7 +138,7 @@ function Header() {
                 
                 <div id="boxB">
                     {navItems.map((item)=>(
-                        <div key={item.name} className='relative group'>
+                        <div id='nvit' key={item.name} className='relative group'>
                             <NavLink id='navlinks' to={item.blink} className={({isActive})=>`${isActive ? 'text-lionDox' : 'text-white' }`}>{item.name} {item.children && <p id="darrw" className=' inline-block '> &#10549; </p>}</NavLink>
                             
                             {item.children && (
