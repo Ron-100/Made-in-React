@@ -189,10 +189,10 @@
     margin: 10px 0;
     color: var(--alFlow);
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: clamp(5px,2vw,14px);
 }
 #con_spartC h1{
-    font-size: clamp(10px,5vw,50px);
+    font-size: clamp(10px,4vw,41px);
     color: white;
     font-weight: 600;
     text-align: center;
@@ -203,6 +203,10 @@
     #con_spartC {
         margin: 0em auto;
         padding: 0;
+    }
+
+    #con_topt{
+        margin-bottom: 0px;
     }
 
     
@@ -221,8 +225,11 @@
         width: 100%;
         gap: 2em;
     }
-    #con_lft #con_itm1,#con_itm1{
+    #con_lft #con_itm1,#con_itm2{
         align-items: start;
+    }
+    #con_itm1,#con_itm2{
+        margin-left: 0px;
     }
 
     #con_mid{

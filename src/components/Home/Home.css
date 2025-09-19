@@ -50,7 +50,8 @@
 
 #spartA {
     flex-wrap: wrap;
-    margin: 64px auto;
+    margin: 5em auto;
+    gap: 40px;
 }
 
 #spartA{
@@ -58,16 +59,17 @@
 }
 
 #spartA #stext {
-    width: 35%;
-    font-size: 18px;
+    width: 88%;
+    font-size: 24px;
+    text-align: center;
     color: #C1C1C1;
 }
 
 #counts {
     display: flex;
-    width: 65%;
+    width: 100%;
     gap: clamp(20px, 5vw, 50px);
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -89,6 +91,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 20px;
     }
     
     #spartA #stext {
@@ -137,6 +140,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2.8em;
 }
 
 #spartB #div1{
@@ -261,13 +265,12 @@ hr{
     margin: 10px 0;
     color: var(--alFlow);
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: clamp(5px,2vw,14px);
 }
 #spartC h1{
-    font-size: clamp(10px,5vw,50px);
+    font-size: clamp(10px,4vw,41px);
     color: white;
     font-weight: 600;
-    text-align: center;
 }
 
 
@@ -275,6 +278,10 @@ hr{
     #spartC {
         margin: 0em auto;
         padding: 0;
+    }
+
+    #spartC #topt{
+        margin-bottom: 0px;
     }
 
     
@@ -295,6 +302,9 @@ hr{
     }
     #lft #itm1,#itm2{
         align-items: start;
+    }
+    #itm1,#itm2{
+        margin-left:0px ;
     }
 
     #mid{

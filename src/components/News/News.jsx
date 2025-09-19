@@ -21,7 +21,7 @@ function News() {
         y: 40
       }, "-=0.4"); // start slightly earlier for smooth flow
 
-      
+       
       // blogs
       gsap.from('.blog-card',{
           opacity:0,

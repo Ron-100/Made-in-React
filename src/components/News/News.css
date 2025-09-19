@@ -56,7 +56,7 @@
 }
 
 .blog-card:hover img{
-    transform: scale(1.04);
+    transform: scale(1.1);
 }
 
 .blog-image {

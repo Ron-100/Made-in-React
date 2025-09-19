@@ -69,9 +69,7 @@
 }
 
 .program-card:hover{
-    border-radius: 8px;
-    border: 2px solid var(--alFlow);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   box-shadow: var(--alFlow) 0px 1px 1.5px;
 }
 
 .program-card img {

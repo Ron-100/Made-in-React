@@ -95,7 +95,7 @@ function ContectUs() {
             </div>
             
             <div id='con_spartC'> 
-                <div id='con_topt' className='max-w-4xl flex justify-center items-center flex-col mb-11'>
+                <div id='con_topt' className='max-w-4xl flex justify-center items-start flex-col mb-11'>
                     <p>Running Benefits</p>
                     <h1>Benefits of running with Running Club</h1>
                 </div>
@@ -114,7 +114,7 @@ function ContectUs() {
                                 <h7 className='text-white text-[clamp(15px,5vw,24px)]'>Personal Growth</h7>
                                 <h9 className='text-start text-gray-300 text-[clamp(8px,4vw,14px)]'>We lead to personal growth, enhancing self-discipline, and goal-setting skills.</h9>
                             </div>
-                            <div id="con_itm2" className='w-full flex flex-col justify-center items-start relative'>
+                            <div id="con_itm2" className='w-full flex flex-col justify-center items-start relative ml-8'>
                                 <div id="mark" className='md:bg-white md:w-4 md:h-4 md:rounded-full md:absolute md:-left-10 md:top-4'></div>
                                 <h7 className=' text-white text-[clamp(15px,5vw,24px)]'>Goal Achievement</h7>
                                 <h9 className='text-start text-gray-300 text-[clamp(8px,4vw,14px)]'>We help set and achieve running goals, whether it's completing a 5K, running a marathon.</h9>
@@ -122,12 +122,12 @@ function ContectUs() {
                         </div>
 
                         <div id="con_rth" className='w-full flex flex-col justify-between items-center gap-6'>
-                            <div id="con_itm1" className='w-full flex flex-col justify-center relative'>
+                            <div id="con_itm1" className='w-full flex flex-col justify-center relative ml-16'>
                                 <div id="mark" className='md:bg-white md:w-4 md:h-4 md:rounded-full md:absolute md:-left-10 md:top-4'></div>
                                 <h7 className=' text-white text-[clamp(15px,5vw,24px)]'>Health and Wellness</h7>
                                 <h9 className=' text-gray-300 text-[clamp(8px,4vw,14px)]'>Regular running with us promotes better physical and mental health, helping you reduce stress.</h9>
                             </div>
-                            <div id="con_itm2" className='w-full flex flex-col justify-center relative'>
+                            <div id="con_itm2" className='w-full flex flex-col justify-center relative ml-24'>
                                 <div id="mark" className='md:bg-white md:w-4 md:h-4 md:rounded-full md:absolute md:-left-10 md:top-4'></div>
                                 <h7 className=' text-white text-[clamp(15px,5vw,24px)]'>Expert Coaching</h7>
                                 <h9 className=' text-gray-300 text-[clamp(8px,4vw,14px)]'>We help set and achieve running goals, whether it's completing a 5K, running a marathon.</h9>
