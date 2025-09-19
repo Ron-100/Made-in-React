@@ -148,7 +148,7 @@ function Home() {
         cSync.from('#gol',{
             scale: 0,
             opacity:0,
-            duration:0.4,
+            duration:0.2,
         })
 
         cSync.from('#gol img',{
@@ -160,24 +160,24 @@ function Home() {
         cSync.from('#lft #itm1',{
             x:150,
             opacity:0,
-            duration:1,
+            duration:0.9,
         },'=-0.5')
         cSync.from('#lft #itm2',{
             x:150,
             opacity:0,
-            duration:1,
+            duration:0.9,
         },'=-0.5')
 
         cSync.from('#rth #itm1',{
             x: 150,
             opacity:0,
-            duration:1,
+            duration:0.9,
         },'=-0.8')
 
         cSync.from('#rth #itm2',{
             x: 150,
             opacity:0,
-            duration:1,
+            duration:0.9,
         },'=-0.8')
         
         cSync.from('#mark',{
